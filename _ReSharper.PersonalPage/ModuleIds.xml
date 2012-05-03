@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="CF5920B5-B658-41B2-8492-72FE09FD20CF" ModuleId="PersonalPage" />
+  <Module PersistentId="233EEB66-EE11-4B41-A440-F132F1D7FE63" ModuleId="PersonalPage.Tests" />
+</Modules>
