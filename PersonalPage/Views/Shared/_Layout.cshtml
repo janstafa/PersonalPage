@@ -1,52 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
-        <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/themes/base/css")" rel="stylesheet" type="text/css" />
-        <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/js")"></script>
-        <meta name="viewport" content="width=device-width" />
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here.", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
+﻿<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <title>Jan Štafa &mdash; IT Freelancer @ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div id="body">
+        <section class="content-wrapper main-content clear-fix">
                 @RenderBody()
             </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-                <div class="float-right">
-                    <ul id="social">
-                        <li><a href="http://facebook.com" class="facebook">Facebook</a></li>
-                        <li><a href="http://twitter.com" class="twitter">Twitter</a></li>
-                    </ul>
-                </div>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year Jan Štafa</p>
             </div>
-        </footer>
-    </body>
+            <div class="float-right">
+                <ul id="social">
+                    <li><a href="http://facebook.com/hstafa" >Facebook</a></li>
+                    <li><a href="http://twitter.com/janstafa" >Twitter</a></li>
+                    <li><a href="http://linkedin.com/in/janstafa" >LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script language="javascript" type="text/javascript">
+<!--        //
+
+
+        /* smooth float */
+        $(function () {
+
+            var msie6 = $.browser == 'msie' && $.browser.version < 7;
+
+            if (!msie6) {
+                var top = $('#sidebar-scroll').offset().top - parseFloat($('#sidebar-scroll').css('margin-top').replace(/auto/, 0));
+                $(window).scroll(function (event) {
+                    // what the y position of the scroll is
+                    var y = $(this).scrollTop();
+
+                    // whether that's below the form
+                    if (y >= top) {
+                        // if so, ad the fixed class
+                        $('#sidebar-scroll').addClass('fixed');
+                    } else {
+                        // otherwise remove it
+                        $('#sidebar-scroll').removeClass('fixed');
+                    }
+                });
+            }
+        });
+//-->
+    </script>
+</body>
 </html>

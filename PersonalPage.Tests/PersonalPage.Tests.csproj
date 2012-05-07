@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NMock2">
+      <HintPath>..\Library\NMock2\NMock2.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\Library\NUnit\nunit.framework.dll</HintPath>
     </Reference>
@@ -53,10 +56,14 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="Servicies\TwitterServiceProvider.cs" />
+    <Compile Include="Servicies\TwitterClientTest.cs" />
+    <Compile Include="Servicies\TwitterServiceProviderTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
+    <Content Include="Servicies\Tweets.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PersonalPage\PersonalPage.csproj">
