@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace PersonalPage.Models.Servicies.Twitter
+namespace PersonalPage.Models.Entities.Twitter
 {
     public class TwitterUser
     {

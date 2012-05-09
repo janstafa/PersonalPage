@@ -56,12 +56,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="Servicies\TwitterClientTest.cs" />
-    <Compile Include="Servicies\TwitterServiceProviderTest.cs" />
+    <Compile Include="Models\Servicies\TwitterClientTest.cs" />
+    <Compile Include="Models\Servicies\TwitterServiceProviderTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
-    <Content Include="Servicies\Tweets.txt">
+    <Content Include="Models\Servicies\Tweets.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

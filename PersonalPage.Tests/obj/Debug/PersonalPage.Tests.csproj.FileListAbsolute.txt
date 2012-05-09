@@ -10,4 +10,4 @@ C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\obj\Debug\P
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\nunit.framework.dll
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\NMock2.dll
-C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\Servicies\Tweets.txt
+C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\Models\Servicies\Tweets.txt

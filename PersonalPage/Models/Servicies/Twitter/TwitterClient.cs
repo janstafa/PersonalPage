@@ -1,12 +1,12 @@
 using System;
 using System.Net;
 
-namespace PersonalPage.Servicies
+namespace PersonalPage.Models.Servicies.Twitter
 {
     public class TwitterClient : ITwitterClient
     {
 
-        public string GetUserTimelineJson(Uri requestUri)
+        public string GetRequest(Uri requestUri)
         {
             #region Defenzive Zone
 

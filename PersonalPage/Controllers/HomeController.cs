@@ -5,10 +5,9 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
-using Attassa;
 using Newtonsoft.Json;
+using PersonalPage.Models.Entities.Twitter;
 using PersonalPage.Models.Servicies.Twitter;
-using PersonalPage.Servicies;
 
 namespace PersonalPage.Controllers
 {
@@ -18,7 +17,7 @@ namespace PersonalPage.Controllers
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            Tweet[] userTimeline = new TwitterService().GetUserTimeline(new TwitterClient());
+            Tweet[] userTimeline = new TwitterService().GetCompleteUserTimeline(new TwitterClient());
 
             ViewBag.Tweets = userTimeline;
             return View();
@@ -26,18 +25,7 @@ namespace PersonalPage.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = Request.QueryString.ToString();
-
-            //todo tady se budou vracet vyfiltrovany zaznamy
-            //udelat objekt kterej se bude renderovat
-            //od toho budou detit konkretni implementace
-
-            //Record
-            //-- Tweet
-            //-- LinkedIn
-            //-- StackoverflowQuestion
-            //-- Article
-
+            ViewBag.Message = "Kontakt";
 
 
 

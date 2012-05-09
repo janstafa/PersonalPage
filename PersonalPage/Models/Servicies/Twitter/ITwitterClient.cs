@@ -1,9 +1,9 @@
 using System;
 
-namespace PersonalPage.Servicies
+namespace PersonalPage.Models.Servicies.Twitter
 {
     public interface ITwitterClient
     {
-        string GetUserTimelineJson(Uri requestUri);
+        string GetRequest(Uri requestUri);
     }
 }

@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Globalization;
-using NMock2;
 using NUnit.Framework;
-using PersonalPage.Servicies;
+using PersonalPage.Models.Servicies.Twitter;
 
-namespace PersonalPage.Tests.Servicies
+namespace PersonalPage.Tests.Models.Servicies
 {
     [TestFixture]
     public class TwitterClientTest
@@ -13,7 +11,7 @@ namespace PersonalPage.Tests.Servicies
         public void DoesGetUserTimelineJsonThrowsArgumentNullException()
         {
             TwitterClient twitterClient = new TwitterClient();
-            Assert.Throws<ArgumentNullException>(() => twitterClient.GetUserTimelineJson(null));
+            Assert.Throws<ArgumentNullException>(() => twitterClient.GetRequest(null));
         }
     }
 }

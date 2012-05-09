@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using PersonalPage.Models.Servicies.Twitter;
+using PersonalPage.Models.Entities.Twitter;
 
-namespace PersonalPage.Servicies
+namespace PersonalPage.Models.Servicies.Twitter
 {
     public class TwitterService
     {
-        public Tweet[] GetUserTimeline(ITwitterClient twitterClient)
+        public Tweet[] GetCompleteUserTimeline(ITwitterClient twitterClient)
         {
-            string tweetsJson = twitterClient.GetUserTimelineJson(new Uri("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=false&include_rts=false&screen_name=janstafa&count=100"));
+            string tweetsJson = twitterClient.GetRequest(new Uri("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=false&include_rts=false&screen_name=janstafa&count=1000000"));
 
             Tweet[] tweets = JsonConvert.DeserializeObject<Tweet[]>(tweetsJson);
 

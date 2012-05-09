@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Data;
-using System.Configuration;
 using System.Web;
 using System.Net;
 using System.IO;
 using System.Collections.Specialized;
-using System.Runtime.Remoting.Messaging;
 using System.Text;
 
-namespace Attassa
+namespace PersonalPage.Models.Servicies.OAuth
 {
 
     public class OAuthLinkedIn : OAuthBase

@@ -124,7 +124,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Servicies\OAuth\oAuthLinkedIn.cs" />
+    <Compile Include="Models\Servicies\OAuth\OAuthLinkedIn.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\Servicies\OAuth\OAuthBase.cs" />
     <Compile Include="Global.asax.cs">
