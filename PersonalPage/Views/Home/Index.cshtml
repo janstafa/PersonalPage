@@ -1,27 +1,87 @@
-﻿
-  
+﻿<script type="text/javascript">
+      <!--
+    $(document).ready(function () {
 
+        var filters = new Array();
+        function Reload() {
+
+            var filterParam = "?";
+
+            $('.filter').each(function (index) {
+                filterParam += $(this).attr("rel") + "=" + filters[$(this).attr("rel")] + "&";
+            });
+            filterParam = filterParam.substring(0, filterParam.length - 1);
+
+            $.ajax({
+                url: '/home/contact/' + filterParam,
+                success: function (data) {
+                    $('.timeline').html(data);
+
+                    $('.filter').each(function (index) {
+                        var filter = $(this).attr("rel");
+
+
+                        if (filters[filter] == true) {
+                            $(this).attr("class", "filter " + filter);
+                        } else {
+                            $(this).attr("class", "filter nofilter");
+                        }
+
+                    });
+
+                },
+                error: function (data) {
+                    alert("fail");
+                }
+            });
+        }
+
+
+        $('.filter').each(function (index) {
+            filters[$(this).attr("rel")] = true;
+        });
+
+
+        $(".filter").click(function () {
+            var filter = $(this).attr("rel");
+
+
+            if (filters[filter] == true) {
+                filters[filter] = false;
+            } else {
+                filters[filter] = true;
+            }
+
+            Reload();
+
+        });
+
+    });
+
+
+      -->
+</script>
 <div style="width: 100%">
-    <div style="float: left; width: 20%; min-width: 300px; ">
-        
-     <div id="sidebar">
-    <div id="sidebar-scroll">
-        <div style="font-size:4em;text-align: right">Jan Štafa</div>
-        <div style="font-style: italic;font-size:2em;text-align: right;margin-bottom: 20px ">IT Freelancer</div>
-        <div style="font-size:1.4em;text-align: right ">Kontakt</div>
-        <div style="font-size:1.4em;text-align: right;margin-bottom: 20px ">Životopis</div>
-                                
-        <div style="font-size:1.4em;text-align: right ">Twitter</div>
-        <div style="font-size:1.4em;text-align: right; margin-bottom: 20px ">LinkedIn</div>
-                                
-        <div style="font-size:1.4em;text-align: right; ">Leden 2012</div>
-        <div style="font-size:1.4em;text-align: right ">Únor 2012</div>
+    <div style="float: left; width: 20%; min-width: 300px;">
+        <div id="sidebar">
+            <div id="sidebar-scroll" style="font-size: 1.4em; text-align: right;">
+                <div style="font-size: 4em;">
+                    Jan Štafa</div>
+                <div style="font-style: italic; font-size: 2em; text-align: right; margin-bottom: 20px">
+                    IT Freelancer</div>
+                <div style="">@Html.ActionLink("Kontakt", "Contact", new { controller = "Home" }, new { @class = "various fancybox.ajax" })</div>
+                <div style="margin-bottom: 20px">
+                    Životopis</div>
+                <a class="filter twitter" href="#" rel="twitter" style="margin-left: 200px;">Twitter</a>
+                <a class="filter linkedin" href="#" rel="linkedin" style="margin-left: 180px;">LinkedIn</a>
+                <div style="">
+                    Leden 2012</div>
+                <div style="">
+                    Únor 2012</div>
+            </div>
         </div>
-</div>
-        
-
     </div>
-    <div style="float: right; width: 65%;min-width: 400px; ">
+    <div style="float: right; width: 65%; min-width: 400px;">
         <div class="timeline">
             @foreach (var tweet in ViewBag.Tweets)
             {
@@ -29,10 +89,8 @@
                 <div class="chat-bubble">
                     @tweet.Text
                     <div class="date">@tweet.CreatedAt.ToShortDateString()
-                        
                     </div>
                     <div class="time">@tweet.CreatedAt.ToShortTimeString()</div>
-
                     <div class="chat-bubble-arrow-border">
                     </div>
                     <div class="chat-bubble-arrow">

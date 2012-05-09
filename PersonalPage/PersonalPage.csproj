@@ -124,20 +124,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\oAuthLinkedIn.cs" />
+    <Compile Include="Models\Servicies\OAuth\oAuthLinkedIn.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\OAuthBase.cs" />
+    <Compile Include="Models\Servicies\OAuth\OAuthBase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Entities\ServiceRecord.cs" />
+    <Compile Include="Models\Servicies\Twitter\TwitterDateTimeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Servicies\ITwitterClient.cs" />
-    <Compile Include="Servicies\Tweet.cs" />
-    <Compile Include="Servicies\TwitterClient.cs" />
-    <Compile Include="Servicies\TwitterServiceProvider.cs" />
-    <Compile Include="Servicies\TwitterUser.cs" />
+    <Compile Include="Models\Servicies\Twitter\ITwitterClient.cs" />
+    <Compile Include="Models\Entities\Twitter\Tweet.cs" />
+    <Compile Include="Models\Servicies\Twitter\TwitterClient.cs" />
+    <Compile Include="Models\Servicies\Twitter\TwitterServiceProvider.cs" />
+    <Compile Include="Models\Entities\Twitter\TwitterUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -151,11 +151,6 @@
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\ChangePassword.cshtml" />
-    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />

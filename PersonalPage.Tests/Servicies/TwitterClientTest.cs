@@ -12,9 +12,6 @@ namespace PersonalPage.Tests.Servicies
         [Test]
         public void DoesGetUserTimelineJsonThrowsArgumentNullException()
         {
-
-
-
             TwitterClient twitterClient = new TwitterClient();
             Assert.Throws<ArgumentNullException>(() => twitterClient.GetUserTimelineJson(null));
         }

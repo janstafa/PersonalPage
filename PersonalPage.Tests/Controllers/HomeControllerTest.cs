@@ -27,19 +27,6 @@ namespace PersonalPage.Tests.Controllers
         }
 
         [Test]
-        public void About()
-        {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.About() as ViewResult;
-
-            // Assert
-            Assert.IsNotNull(result);
-        }
-
-        [Test]
         public void Contact()
         {
             // Arrange

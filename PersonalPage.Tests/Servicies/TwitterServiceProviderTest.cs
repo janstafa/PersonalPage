@@ -2,6 +2,7 @@
 using System.IO;
 using NMock2;
 using NUnit.Framework;
+using PersonalPage.Models.Servicies.Twitter;
 using PersonalPage.Servicies;
 
 namespace PersonalPage.Tests.Servicies

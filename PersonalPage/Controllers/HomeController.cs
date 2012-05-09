@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using Attassa;
 using Newtonsoft.Json;
+using PersonalPage.Models.Servicies.Twitter;
 using PersonalPage.Servicies;
 
 namespace PersonalPage.Controllers
@@ -23,16 +24,22 @@ namespace PersonalPage.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your quintessential app description page.";
-
-            return View();
-        }
-
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your quintessential contact page.";
+            ViewBag.Message = Request.QueryString.ToString();
+
+            //todo tady se budou vracet vyfiltrovany zaznamy
+            //udelat objekt kterej se bude renderovat
+            //od toho budou detit konkretni implementace
+
+            //Record
+            //-- Tweet
+            //-- LinkedIn
+            //-- StackoverflowQuestion
+            //-- Article
+
+
+
 
             return View();
         }
