@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using NMock2;
 using NUnit.Framework;
 using PersonalPage.Models.Entities.Twitter;
@@ -24,9 +26,9 @@ namespace PersonalPage.Tests.Models.Servicies
                        .Will(Return.Value(returnJson));
 
             TwitterService twitterServiceProvider = new TwitterService();
-            Tweet[] tweets = twitterServiceProvider.GetCompleteUserTimeline(twitterClient);
+            IEnumerable<Tweet> tweets = twitterServiceProvider.GetCompleteUserTimeline(twitterClient);
 
-            Assert.Greater(tweets.Length, 0, "Number of tweets should be more then 0!");
+            Assert.Greater(tweets.Count(), 0, "Number of tweets should be more then 0!");
         }
     }
 }

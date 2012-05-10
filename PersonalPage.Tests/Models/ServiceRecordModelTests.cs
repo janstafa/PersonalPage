@@ -17,5 +17,32 @@ namespace PersonalPage.Tests.Models
 
             Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
         }
+
+
+        [Test]
+        public void CanGetTwitterServiceRecords()
+        {
+            ServiceRecordModel serviceRecordModel = new ServiceRecordModel();
+            IEnumerable<ServiceRecord> allServiceRecords = serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Twitter);
+
+            Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
+        }
+
+
+        [Test]
+        public void CanGetLinkedInServiceRecords()
+        {
+            ServiceRecordModel serviceRecordModel = new ServiceRecordModel();
+            IEnumerable<ServiceRecord> allServiceRecords = serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.LinkedIn);
+
+            Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
+        }
+
+        [Test]
+        public void CannotGetUnknonwServiceRecords()
+        {
+            ServiceRecordModel serviceRecordModel = new ServiceRecordModel();
+            Assert.Throws<Exeption>(serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Unknown));
+        }
     }
 }

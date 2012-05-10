@@ -14,16 +14,37 @@ namespace PersonalPage.Models
         public IEnumerable<ServiceRecord> GetAllServiceRecords()
         {
             TwitterService twitterService = new TwitterService();
-            Tweet[] completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
+            IEnumerable<Tweet> completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
 
             return completeUserTimeline;
         }
 
 
-        public IEnumerable<ServiceRecord> GetSpecificServiceRecords(string serviceName)
+        public enum ServiceType
         {
-            throw new NotImplementedException();
+            Twitter,
+            LinkedIn,
+            Unknown
         }
 
+        public IEnumerable<ServiceRecord> GetSpecificServiceRecords(ServiceType serviceType)
+        {
+            IEnumerable<ServiceRecord> result;
+
+            switch (serviceType)
+            {
+                case ServiceType.Twitter:
+                    TwitterService twitterService = new TwitterService();
+                    result = twitterService.GetCompleteUserTimeline(new TwitterClient());
+                    break;
+                case ServiceType.LinkedIn:
+                    throw new NotImplementedException();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException("serviceType");
+            }
+
+            return result;
+        }
     }
 }
