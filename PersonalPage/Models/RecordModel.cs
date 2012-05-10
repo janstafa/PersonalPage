@@ -11,13 +11,19 @@ namespace PersonalPage.Models
 {
     public class ServiceRecordModel
     {
-        public ServiceRecord[] GetAllServiceRecords()
+        public IEnumerable<ServiceRecord> GetAllServiceRecords()
         {
-
             TwitterService twitterService = new TwitterService();
             Tweet[] completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
 
             return completeUserTimeline;
         }
+
+
+        public IEnumerable<ServiceRecord> GetSpecificServiceRecords(string serviceName)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

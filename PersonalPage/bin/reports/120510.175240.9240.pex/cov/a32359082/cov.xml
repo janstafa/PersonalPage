@@ -1,0 +1,209 @@
+﻿<documents created="2012-05-10 16:52:53Z"><document src="C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\Models\RecordModel.cs" renderPrefix="s0"><chunk hits="-1" domain="unknown"><source><![CDATA[using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using PersonalPage.Models.Entities;
+using PersonalPage.Models.Entities.Twitter;
+using PersonalPage.Models.Servicies.Twitter;
+
+namespace PersonalPage.Models
+{
+    public class ServiceRecordModel
+    {
+        public IEnumerable<ServiceRecord> GetAllServiceRecords()
+        ]]></source>
+</chunk>
+<method name="GetAllServiceRecords" namespace="PersonalPage.Models" type="PersonalPage.Models.ServiceRecordModel" typeName="ServiceRecordModel" token="6000043" module="PersonalPage.dll"><hits><hit index="0" value="1"/>
+<hit index="1" value="1"/>
+<hit index="3" value="1"/>
+<hit index="4" value="1"/>
+<hit index="6" value="1"/>
+<hit index="7" value="1"/>
+<hit index="8" value="1"/>
+<hit index="10" value="1"/>
+</hits>
+<coverage domain="usercodeundertest" unit="block" covered="4" total="4" coveredRatio="1"/>
+</method>
+<chunk hits="1" offset="0000" domain="usercodeundertest"><source><![CDATA[{]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0001" domain="usercodeundertest"><source><![CDATA[TwitterService twitterService = new TwitterService();]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0007" domain="usercodeundertest"><source><![CDATA[Tweet[] completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0013" domain="usercodeundertest"><source><![CDATA[return completeUserTimeline;]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+        ]]></source>
+</chunk>
+<chunk hits="1" offset="0017" domain="usercodeundertest"><source><![CDATA[}]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+
+
+        public IEnumerable<ServiceRecord> GetSpecificServiceRecords(string serviceName)
+        ]]></source>
+</chunk>
+<method name="GetSpecificServiceRecords" namespace="PersonalPage.Models" type="PersonalPage.Models.ServiceRecordModel" typeName="ServiceRecordModel" token="6000044" module="PersonalPage.dll"><hits><hit index="0" value="1"/>
+<hit index="1" value="1"/>
+<hit index="3" value="1"/>
+</hits>
+<coverage domain="usercodeundertest" unit="block" covered="2" total="2" coveredRatio="1"/>
+</method>
+<chunk hits="1" offset="0000" domain="usercodeundertest"><source><![CDATA[{]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0001" domain="usercodeundertest"><source><![CDATA[return new List<ServiceRecord>();]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+        ]]></source>
+</chunk>
+<chunk hits="1" offset="0009" domain="usercodeundertest"><source><![CDATA[}]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+
+    }
+}]]></source>
+</chunk>
+</document>
+<document src="C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\Models\Servicies\Twitter\TwitterService.cs" renderPrefix="s1"><chunk hits="-1" domain="unknown"><source><![CDATA[using System;
+using Newtonsoft.Json;
+using PersonalPage.Models.Entities.Twitter;
+
+namespace PersonalPage.Models.Servicies.Twitter
+{
+    public class TwitterService
+    {
+        public Tweet[] GetCompleteUserTimeline(ITwitterClient twitterClient)
+        ]]></source>
+</chunk>
+<method name="GetCompleteUserTimeline" namespace="PersonalPage.Models.Servicies.Twitter" type="PersonalPage.Models.Servicies.Twitter.TwitterService" typeName="TwitterService" token="6000030" module="PersonalPage.dll"><hits><hit index="0" value="1"/>
+<hit index="1" value="1"/>
+<hit index="3" value="1"/>
+<hit index="4" value="1"/>
+<hit index="5" value="1"/>
+<hit index="7" value="1"/>
+</hits>
+<coverage domain="userortestcode" unit="block" covered="3" total="4" coveredRatio="0.75"/>
+</method>
+<chunk hits="1" offset="0000" domain="userortestcode"><source><![CDATA[{]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0001" domain="userortestcode"><source><![CDATA[string tweetsJson = twitterClient.GetRequest(new Uri("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=false&include_rts=false&screen_name=janstafa&count=1000000"));]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0012" domain="userortestcode"><source><![CDATA[Tweet[] tweets = JsonConvert.DeserializeObject<Tweet[]>(tweetsJson);]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+
+            ]]></source>
+</chunk>
+<chunk hits="0" offset="0019" domain="userortestcode"><source><![CDATA[return tweets;]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+        ]]></source>
+</chunk>
+<chunk hits="0" offset="001d" domain="userortestcode"><source><![CDATA[}]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+    }
+}]]></source>
+</chunk>
+</document>
+<document src="C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\Models\Servicies\Twitter\TwitterClient.cs" renderPrefix="s2"><chunk hits="-1" domain="unknown"><source><![CDATA[using System;
+using System.Net;
+
+namespace PersonalPage.Models.Servicies.Twitter
+{
+    public class TwitterClient : ITwitterClient
+    {
+
+        public string GetRequest(Uri requestUri)
+        ]]></source>
+</chunk>
+<method name="GetRequest" namespace="PersonalPage.Models.Servicies.Twitter" type="PersonalPage.Models.Servicies.Twitter.TwitterClient" typeName="TwitterClient" token="6000033" module="PersonalPage.dll"><hits><hit index="0" value="1"/>
+<hit index="1" value="1"/>
+<hit index="2" value="1"/>
+<hit index="8" value="1"/>
+<hit index="10" value="1"/>
+<hit index="11" value="1"/>
+<hit index="12" value="1"/>
+<hit index="14" value="1"/>
+<hit index="15" value="1"/>
+</hits>
+<coverage domain="userortestcode" unit="block" covered="5" total="7" coveredRatio="0.7142857142857143"/>
+</method>
+<chunk hits="1" offset="0000" domain="userortestcode"><source><![CDATA[{]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            #region Defenzive Zone
+
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0001" domain="userortestcode"><source><![CDATA[if (requestUri == null)]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            ]]></source>
+</chunk>
+<chunk hits="0" offset="000f" domain="userortestcode"><source><![CDATA[{]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+                ]]></source>
+</chunk>
+<chunk hits="0" offset="0010" domain="userortestcode"><source><![CDATA[throw new ArgumentNullException("requestUri");]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            }
+
+            #endregion
+
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="001b" domain="userortestcode"><source><![CDATA[WebClient client = new WebClient();]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0021" domain="userortestcode"><source><![CDATA[return client.DownloadString(requestUri);]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+        ]]></source>
+</chunk>
+<chunk hits="1" offset="002b" domain="userortestcode"><source><![CDATA[}]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+    }
+}]]></source>
+</chunk>
+</document>
+<document src="(no sources available for some parts of PersonalPage1.Tests, PersonalPage)" missing="true"><method name="GetAllServiceRecords" type="PersonalPage.Models.ServiceRecordModelTest" token="6000001" module="&lt;In Memory Module&gt;"><hits/>
+<coverage domain="userortestcode" unit="block" covered="1" total="2" coveredRatio="0.5"/>
+</method>
+<method name=".ctor" type="PersonalPage.Models.Servicies.Twitter.TwitterService" token="6000031" module="PersonalPage.dll"><hits/>
+<coverage domain="userortestcode" unit="block" covered="2" total="2" coveredRatio="1"/>
+</method>
+<method name=".ctor" type="PersonalPage.Models.Servicies.Twitter.TwitterClient" token="6000034" module="PersonalPage.dll"><hits/>
+<coverage domain="userortestcode" unit="block" covered="2" total="2" coveredRatio="1"/>
+</method>
+<method name="GetSpecificServiceRecords" type="PersonalPage.Models.ServiceRecordModelTest" token="6000002" module="&lt;In Memory Module&gt;"><hits/>
+<coverage domain="userortestcode" unit="block" covered="2" total="2" coveredRatio="1"/>
+</method>
+</document>
+</documents>

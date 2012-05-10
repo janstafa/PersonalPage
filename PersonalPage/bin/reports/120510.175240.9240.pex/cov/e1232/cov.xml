@@ -1,0 +1,54 @@
+﻿<documents created="2012-05-10 16:52:52Z"><document src="C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\Models\RecordModel.cs" renderPrefix="s0"><chunk hits="-1" domain="unknown"><source><![CDATA[using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using PersonalPage.Models.Entities;
+using PersonalPage.Models.Entities.Twitter;
+using PersonalPage.Models.Servicies.Twitter;
+
+namespace PersonalPage.Models
+{
+    public class ServiceRecordModel
+    {
+        public IEnumerable<ServiceRecord> GetAllServiceRecords()
+        {
+            TwitterService twitterService = new TwitterService();
+            Tweet[] completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
+
+            return completeUserTimeline;
+        }
+
+
+        public IEnumerable<ServiceRecord> GetSpecificServiceRecords(string serviceName)
+        ]]></source>
+</chunk>
+<method name="GetSpecificServiceRecords" namespace="PersonalPage.Models" type="PersonalPage.Models.ServiceRecordModel" typeName="ServiceRecordModel" token="6000044" module="PersonalPage.dll"><hits><hit index="0" value="1"/>
+<hit index="1" value="1"/>
+<hit index="3" value="1"/>
+</hits>
+<coverage domain="usercodeundertest" unit="block" covered="2" total="2" coveredRatio="1"/>
+</method>
+<chunk hits="1" offset="0000" domain="usercodeundertest"><source><![CDATA[{]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+            ]]></source>
+</chunk>
+<chunk hits="1" offset="0001" domain="usercodeundertest"><source><![CDATA[return new List<ServiceRecord>();]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+        ]]></source>
+</chunk>
+<chunk hits="1" offset="0009" domain="usercodeundertest"><source><![CDATA[}]]></source>
+</chunk>
+<chunk hits="-1" domain="unknown"><source><![CDATA[
+
+    }
+}]]></source>
+</chunk>
+</document>
+<document src="(no sources available for some parts of PersonalPage1.Tests)" missing="true"><method name="GetSpecificServiceRecords" type="PersonalPage.Models.ServiceRecordModelTest" token="6000002" module="&lt;In Memory Module&gt;"><hits/>
+<coverage domain="userortestcode" unit="block" covered="2" total="2" coveredRatio="1"/>
+</method>
+</document>
+</documents>
