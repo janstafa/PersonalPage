@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using PersonalPage.Models;
@@ -42,7 +43,7 @@ namespace PersonalPage.Tests.Models
         public void CannotGetUnknonwServiceRecords()
         {
             ServiceRecordModel serviceRecordModel = new ServiceRecordModel();
-            Assert.Throws<Exeption>(serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Unknown));
+            Assert.Throws<ArgumentOutOfRangeException>(() => serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Unknown));
         }
     }
 }
