@@ -15,9 +15,9 @@ namespace PersonalPage.Models
         {
 
             TwitterService twitterService = new TwitterService();
-            Tweet[] completeUserTimeline = twitterService.GetCompleteUserTimeline();
+            Tweet[] completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
 
-            return new ServiceRecord[0];
+            return completeUserTimeline;
         }
     }
 }
