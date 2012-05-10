@@ -1,1 +1,8 @@
 # git ignore file
+/_ReSharper.PersonalPage
+/PersonalPage.6.5.TeamCity.user
+/PersonalPage.crunchsolution.cache
+/PersonalPage.ncrunchsolution
+/PersonalPage.ncrunchsolution.user
+/PersonalPage.sln.docstates.suo
+/PersonalPage.sln.DotSettings.user
