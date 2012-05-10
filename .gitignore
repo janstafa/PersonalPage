@@ -7,3 +7,7 @@
 /PersonalPage.sln.docstates.suo
 /PersonalPage.sln.DotSettings.user
 /_ReSharper.PersonalPage
+/PersonalPage/obj
+/PersonalPage/bin
+/PersonalPage.Tests/bin
+/PersonalPage.Tests/obj
