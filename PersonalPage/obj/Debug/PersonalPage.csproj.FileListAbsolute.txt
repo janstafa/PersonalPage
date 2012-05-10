@@ -2,6 +2,7 @@ C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\PersonalPage.
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\PersonalPage.pdb
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\EntityFramework.dll
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\Newtonsoft.Json.dll
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\System.Json.dll
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\System.Net.Http.dll
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\System.Net.Http.Formatting.dll
@@ -34,4 +35,3 @@ C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\System.Web.We
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\obj\Debug\PersonalPage.dll
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\obj\Debug\PersonalPage.pdb
-C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage\bin\Newtonsoft.Json.dll

@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.Web.Query.Dynamic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -16,15 +17,13 @@ namespace PersonalPage.Models.Servicies.Twitter
         {
             if (reader.TokenType != JsonToken.String)
             {
-                throw new Exception(
-                    String.Format("Unexpected token parsing date. Expected String, got {0}.",
-                                  reader.TokenType));
+                throw new JsonReaderException(String.Format("Unexpected token parsing date. Expected String, got {0}.", reader.TokenType));
             }
 
             var twitterDateTime = (string)reader.Value;
 
             DateTime dateTime = DateTime.ParseExact(twitterDateTime, "ddd MMM dd HH:mm:ss zzz yyyy", CultureInfo.InvariantCulture);
-            
+
             return dateTime;
         }
     }

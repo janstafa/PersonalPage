@@ -124,6 +124,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\RecordModel.cs" />
     <Compile Include="Models\Servicies\OAuth\OAuthLinkedIn.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\Servicies\OAuth\OAuthBase.cs" />
@@ -136,7 +137,7 @@
     <Compile Include="Models\Servicies\Twitter\ITwitterClient.cs" />
     <Compile Include="Models\Entities\Twitter\Tweet.cs" />
     <Compile Include="Models\Servicies\Twitter\TwitterClient.cs" />
-    <Compile Include="Models\Servicies\Twitter\TwitterServiceProvider.cs" />
+    <Compile Include="Models\Servicies\Twitter\TwitterService.cs" />
     <Compile Include="Models\Entities\Twitter\TwitterUser.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -154,7 +155,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>

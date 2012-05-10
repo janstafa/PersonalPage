@@ -15,12 +15,12 @@ namespace PersonalPage.Tests.Models.Servicies
         [Test]
         public void GetUserTimeline()
         {
-            string returnJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/Servicies/Tweets.txt");
+            string returnJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/Models/Servicies/Tweets.txt");
 
 
             ITwitterClient twitterClient = mocks.NewMock<ITwitterClient>();
             Expect.Once.On(twitterClient)
-                       .Method("GetUserTimelineJson")
+                       .Method("GetRequest")
                        .Will(Return.Value(returnJson));
 
             TwitterService twitterServiceProvider = new TwitterService();
