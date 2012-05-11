@@ -12,7 +12,7 @@ namespace PersonalPage.Tests.Models.Servicies
     [TestFixture]
     public class TwitterServiceProviderTest
     {
-        Mockery mocks = new Mockery();
+        readonly Mockery mocks = new Mockery();
 
         [Test]
         public void GetUserTimeline()

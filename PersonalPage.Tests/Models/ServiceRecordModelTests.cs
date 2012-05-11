@@ -30,14 +30,6 @@ namespace PersonalPage.Tests.Models
         }
 
 
-        [Test]
-        public void CanGetLinkedInServiceRecords()
-        {
-            ServiceRecordModel serviceRecordModel = new ServiceRecordModel();
-            IEnumerable<ServiceRecord> allServiceRecords = serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.LinkedIn);
-
-            Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
-        }
 
         [Test]
         public void CannotGetUnknonwServiceRecords()

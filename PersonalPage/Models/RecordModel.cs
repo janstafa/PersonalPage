@@ -23,7 +23,6 @@ namespace PersonalPage.Models
         public enum ServiceType
         {
             Twitter,
-            LinkedIn,
             Unknown
         }
 
@@ -36,9 +35,6 @@ namespace PersonalPage.Models
                 case ServiceType.Twitter:
                     TwitterService twitterService = new TwitterService();
                     result = twitterService.GetCompleteUserTimeline(new TwitterClient());
-                    break;
-                case ServiceType.LinkedIn:
-                    throw new NotImplementedException();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException("serviceType");
