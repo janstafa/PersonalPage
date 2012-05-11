@@ -20,12 +20,12 @@ namespace PersonalPage.Tests.Models.Servicies
             string returnJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/Models/Servicies/Tweets.txt");
 
 
-            ITwitterClient twitterClient = _mocks.NewMock<ITwitterClient>();
+            var twitterClient = _mocks.NewMock<ITwitterClient>();
             Expect.Once.On(twitterClient)
                        .Method("GetRequest")
                        .Will(Return.Value(returnJson));
 
-            TwitterService twitterServiceProvider = new TwitterService();
+            var twitterServiceProvider = new TwitterService();
             IEnumerable<Tweet> tweets = twitterServiceProvider.GetCompleteUserTimeline(twitterClient);
 
             Assert.Greater(tweets.Count(), 0, "Number of tweets should be more then 0!");

@@ -2,41 +2,40 @@
 <publishData>
   <publishProfile publishUrl="ftp://stafa.asp2.cz/wwwroot/" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="False" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="stafa.asp2.net" publishMethod="FTP" replaceMatchingFiles="True" userName="stafa" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaX7OOU2jpkCyzWRcdgLcugAAAAACAAAAAAAQZgAAAAEAACAAAAC79+fOX7fWTJcOfczoBrx2Uwvh7mLM8HYEJlHZxYqHpQAAAAAOgAAAAAIAACAAAAD3+JnDKiXfQy36hF8W1Pa0nZGMOFkssNCKf4SxAYJwqiAAAAB7joEr3ELQaLrh10rrsDUDoQFUS00XZ72jUo/COX0CfEAAAAAPhCAnmy2Ix0woyZGEq4e8D+m5kIyvvqCSmzEnd8xPLC4QifbQN0GRzt7YEfNAhlL+weSZ+CVYzIqmgF90qnsO" SelectedForPublish="True">
     <file relUrl="Views/Account/Register.cshtml" publishTime="05/01/2012 20:46:33" />
-    <file relUrl="bin/EntityFramework.dll" publishTime="05/01/2012 20:47:00" />
-    <file relUrl="Views/Shared/_LoginPartial.cshtml" publishTime="05/01/2012 20:46:33" />
     <file relUrl="Global.asax" publishTime="05/01/2012 20:46:33" />
     <file relUrl="bin/EntityFramework.xml" publishTime="05/01/2012 20:47:00" />
     <file relUrl="Views/_ViewStart.cshtml" publishTime="05/01/2012 20:46:33" />
     <file relUrl="bin/System.Net.Http.WebRequest.xml" publishTime="05/01/2012 20:47:08" />
     <file relUrl="bin/System.Web.Mvc.xml" publishTime="05/01/2012 20:47:06" />
     <file relUrl="bin/System.Web.Http.Common.xml" publishTime="05/01/2012 20:47:05" />
-    <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="05/01/2012 20:47:03" />
+    <file relUrl="bin/System.Web.Http.dll" publishTime="05/01/2012 20:47:10" />
+    <file relUrl="Views/Account/ChangePasswordSuccess.cshtml" publishTime="05/01/2012 20:46:33" />
     <file relUrl="bin/System.Net.Http.dll" publishTime="05/01/2012 20:47:08" />
     <file relUrl="bin/System.Net.Http.Formatting.dll" publishTime="05/01/2012 20:47:09" />
     <file relUrl="Views/Shared/Error.cshtml" publishTime="05/01/2012 20:46:33" />
-    <file relUrl="Views/Account/ChangePasswordSuccess.cshtml" publishTime="05/01/2012 20:46:33" />
+    <file relUrl="bin/System.Web.Helpers.xml" publishTime="05/01/2012 20:47:03" />
     <file relUrl="Views/Home/About.cshtml" publishTime="05/01/2012 20:46:33" />
     <file relUrl="bin/PersonalPage.dll" publishTime="05/07/2012 18:03:32" />
-    <file relUrl="bin/System.Web.Mvc.dll" publishTime="05/01/2012 20:47:06" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="05/01/2012 20:47:02" />
+    <file relUrl="Views/Shared/_LoginPartial.cshtml" publishTime="05/01/2012 20:46:33" />
     <file relUrl="bin/System.Web.WebPages.Deployment.xml" publishTime="05/01/2012 20:47:03" />
     <file relUrl="Views/Account/ChangePassword.cshtml" publishTime="05/01/2012 20:46:33" />
-    <file relUrl="bin/System.Web.Helpers.dll" publishTime="05/01/2012 20:47:03" />
+    <file relUrl="bin/System.Web.WebPages.Razor.xml" publishTime="05/01/2012 20:47:03" />
     <file relUrl="bin/System.Web.WebPages.dll" publishTime="05/01/2012 20:47:03" />
     <file relUrl="packages.config" publishTime="05/01/2012 20:47:15" />
     <file relUrl="bin/System.Web.Http.xml" publishTime="05/01/2012 20:47:10" />
-    <file relUrl="bin/System.Web.WebPages.Razor.xml" publishTime="05/01/2012 20:47:03" />
     <file relUrl="Views/Home/Index.cshtml" publishTime="05/07/2012 19:16:43" />
     <file relUrl="bin/System.Web.Razor.xml" publishTime="05/01/2012 20:47:02" />
     <file relUrl="bin/System.Web.Http.WebHost.xml" publishTime="05/01/2012 20:47:11" />
     <file relUrl="bin/System.Web.WebPages.xml" publishTime="05/01/2012 20:47:03" />
-    <file relUrl="bin/System.Web.Http.dll" publishTime="05/01/2012 20:47:10" />
+    <file relUrl="bin/System.Web.Mvc.dll" publishTime="05/01/2012 20:47:06" />
     <file relUrl="bin/Newtonsoft.Json.dll" publishTime="04/25/2012 10:43:00" />
     <file relUrl="Views/Account/Login.cshtml" publishTime="05/01/2012 20:46:33" />
-    <file relUrl="Content/Site.css" publishTime="05/07/2012 18:33:46" />
+    <file relUrl="bin/System.Web.Optimization.dll" publishTime="05/01/2012 20:47:14" />
     <file relUrl="Views/Shared/_Layout.cshtml" publishTime="05/07/2012 19:20:35" />
     <file relUrl="bin/System.Net.Http.WebRequest.dll" publishTime="05/01/2012 20:47:08" />
     <file relUrl="Views/Home/Contact.cshtml" publishTime="05/01/2012 20:46:33" />
-    <file relUrl="bin/System.Web.Razor.dll" publishTime="05/01/2012 20:47:02" />
+    <file relUrl="Content/Site.css" publishTime="05/07/2012 18:33:46" />
     <file relUrl="bin/System.Json.xml" publishTime="05/01/2012 20:47:07" />
     <file relUrl="bin/PersonalPage.pdb" publishTime="05/07/2012 18:03:32" />
     <file relUrl="bin/System.Web.WebPages.Deployment.dll" publishTime="05/01/2012 20:47:03" />
@@ -44,13 +43,14 @@
     <file relUrl="bin/System.Net.Http.xml" publishTime="05/01/2012 20:47:08" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="05/01/2012 20:47:01" />
     <file relUrl="Web.config" publishTime="05/08/2012 17:15:34" />
-    <file relUrl="bin/System.Json.dll" publishTime="05/01/2012 20:47:07" />
+    <file relUrl="bin/System.Web.Helpers.dll" publishTime="05/01/2012 20:47:03" />
     <file relUrl="bin/System.Net.Http.Formatting.xml" publishTime="05/01/2012 20:47:09" />
+    <file relUrl="bin/EntityFramework.dll" publishTime="05/01/2012 20:47:00" />
     <file relUrl="favicon.ico" publishTime="05/01/2012 20:46:33" />
     <file relUrl="bin/System.Web.Providers.dll" publishTime="05/01/2012 20:47:12" />
-    <file relUrl="bin/System.Web.Optimization.dll" publishTime="05/01/2012 20:47:14" />
+    <file relUrl="bin/System.Json.dll" publishTime="05/01/2012 20:47:07" />
     <file relUrl="bin/System.Web.Http.Common.dll" publishTime="05/01/2012 20:47:05" />
     <file relUrl="Views/Web.config" publishTime="05/01/2012 20:46:33" />
-    <file relUrl="bin/System.Web.Helpers.xml" publishTime="05/01/2012 20:47:03" />
+    <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="05/01/2012 20:47:03" />
   </publishProfile>
 </publishData>

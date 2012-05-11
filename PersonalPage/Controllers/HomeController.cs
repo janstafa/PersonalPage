@@ -19,7 +19,7 @@ namespace PersonalPage.Controllers
 
             var twitterService = new TwitterService();
 
-            IEnumerable<Tweet> userTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
+            var userTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
             if (userTimeline == null)
             {
                 throw new ArgumentNullException("userTimeline");

@@ -13,8 +13,8 @@ namespace PersonalPage.Tests.Models
         [Test]
         public void CanGetAllServiceRecords()
         {
-            ServiceRecordModel serviceRecordModel = new ServiceRecordModel();
-            IEnumerable<ServiceRecord> allServiceRecords = serviceRecordModel.GetAllServiceRecords();
+            var serviceRecordModel = new ServiceRecordModel();
+            var allServiceRecords = serviceRecordModel.GetAllServiceRecords();
 
             Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
         }
@@ -23,8 +23,8 @@ namespace PersonalPage.Tests.Models
         [Test]
         public void CanGetTwitterServiceRecords()
         {
-            ServiceRecordModel serviceRecordModel = new ServiceRecordModel();
-            IEnumerable<ServiceRecord> allServiceRecords = serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Twitter);
+            var serviceRecordModel = new ServiceRecordModel();
+            var allServiceRecords = serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Twitter);
 
             Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
         }
@@ -34,7 +34,7 @@ namespace PersonalPage.Tests.Models
         [Test]
         public void CannotGetUnknonwServiceRecords()
         {
-            ServiceRecordModel serviceRecordModel = new ServiceRecordModel();
+            var serviceRecordModel = new ServiceRecordModel();
             Assert.Throws<ArgumentOutOfRangeException>(() => serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Unknown));
         }
     }
