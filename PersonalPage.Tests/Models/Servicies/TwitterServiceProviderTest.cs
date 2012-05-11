@@ -12,7 +12,7 @@ namespace PersonalPage.Tests.Models.Servicies
     [TestFixture]
     public class TwitterServiceProviderTest
     {
-        readonly Mockery mocks = new Mockery();
+        readonly private Mockery _mocks = new Mockery();
 
         [Test]
         public void GetUserTimeline()
@@ -20,7 +20,7 @@ namespace PersonalPage.Tests.Models.Servicies
             string returnJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/Models/Servicies/Tweets.txt");
 
 
-            ITwitterClient twitterClient = mocks.NewMock<ITwitterClient>();
+            ITwitterClient twitterClient = _mocks.NewMock<ITwitterClient>();
             Expect.Once.On(twitterClient)
                        .Method("GetRequest")
                        .Will(Return.Value(returnJson));
