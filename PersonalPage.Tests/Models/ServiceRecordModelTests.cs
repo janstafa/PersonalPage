@@ -10,7 +10,7 @@ namespace PersonalPage.Tests.Models
     [TestFixture]
     class ServiceRecordModelTest
     {
-        [Test, Category("UnitTest")]
+        [Test, Category("IntegrationTest")]
         public void CanGetAllServiceRecords()
         {
             var serviceRecordModel = new ServiceRecordModel();
