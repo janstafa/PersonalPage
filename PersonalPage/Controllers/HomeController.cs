@@ -21,11 +21,7 @@ namespace PersonalPage.Controllers
             var twitterService = new TwitterService();
 
             var userTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
-            if (userTimeline == null)
-            {
-                throw new ArgumentNullException("userTimeline");
-            }
-
+             
             ViewBag.Tweets = userTimeline;
             return View();
         }
