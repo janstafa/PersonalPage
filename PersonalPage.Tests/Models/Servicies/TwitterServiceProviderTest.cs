@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using NMock2;
 using NUnit.Framework;
-using PersonalPage.Models.Entities.Twitter;
 using PersonalPage.Models.Servicies.Twitter;
 
 namespace PersonalPage.Tests.Models.Servicies

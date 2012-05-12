@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using PersonalPage.Models.Entities;
 using PersonalPage.Models.Entities.Twitter;
 using PersonalPage.Models.Servicies.Twitter;

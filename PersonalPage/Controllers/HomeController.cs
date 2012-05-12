@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Script.Serialization;
-using Newtonsoft.Json;
-using PersonalPage.Models.Entities.Twitter;
+﻿using System.Web.Mvc;
 using PersonalPage.Models.Servicies.Twitter;
 
 namespace PersonalPage.Controllers
