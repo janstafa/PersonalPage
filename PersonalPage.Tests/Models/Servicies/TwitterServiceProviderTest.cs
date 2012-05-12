@@ -19,7 +19,7 @@ namespace PersonalPage.Tests.Models.Servicies
         {
             string returnJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/Models/Servicies/Tweets.txt");
 
-
+             
             var twitterClient = _mocks.NewMock<ITwitterClient>();
             Expect.Once.On(twitterClient)
                        .Method("GetRequest")

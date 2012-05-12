@@ -18,7 +18,7 @@ namespace PersonalPage.Tests.Models
 
             Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
         }
-
+         
 
         [Test, Category("IntegrationTest")] //todo pomoci DI a mocku z toho udelat unit test
         public void CanGetTwitterServiceRecords()
