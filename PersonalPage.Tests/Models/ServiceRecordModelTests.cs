@@ -10,7 +10,7 @@ namespace PersonalPage.Tests.Models
     [TestFixture]
     class ServiceRecordModelTest
     {
-        [Test, Category("IntegrationTest")]
+        [Test, Category("IntegrationTest")] //todo pomoci DI a mocku z toho udelat unit test
         public void CanGetAllServiceRecords()
         {
             var serviceRecordModel = new ServiceRecordModel();
@@ -20,7 +20,7 @@ namespace PersonalPage.Tests.Models
         }
 
 
-        [Test, Category("UnitTest")]
+        [Test, Category("IntegrationTest")] //todo pomoci DI a mocku z toho udelat unit test
         public void CanGetTwitterServiceRecords()
         {
             var serviceRecordModel = new ServiceRecordModel();
