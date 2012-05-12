@@ -7,7 +7,7 @@ namespace PersonalPage.Tests.Controllers
     [TestFixture]
     public class HomeControllerTest
     {
-        [Test, Category("UnitTest")]
+        [Test, Category("IntegrationTest")]
         public void Index()
         {
             // Arrange
