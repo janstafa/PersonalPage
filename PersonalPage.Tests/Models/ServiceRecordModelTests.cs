@@ -10,7 +10,7 @@ namespace PersonalPage.Tests.Models
     [TestFixture]
     class ServiceRecordModelTest
     {
-        [Test]
+        [Test, Category("UnitTest")]
         public void CanGetAllServiceRecords()
         {
             var serviceRecordModel = new ServiceRecordModel();
@@ -20,7 +20,7 @@ namespace PersonalPage.Tests.Models
         }
 
 
-        [Test]
+        [Test, Category("UnitTest")]
         public void CanGetTwitterServiceRecords()
         {
             var serviceRecordModel = new ServiceRecordModel();
@@ -30,8 +30,7 @@ namespace PersonalPage.Tests.Models
         }
 
 
-
-        [Test]
+        [Test, Category("UnitTest")]
         public void CannotGetUnknonwServiceRecords()
         {
             var serviceRecordModel = new ServiceRecordModel();

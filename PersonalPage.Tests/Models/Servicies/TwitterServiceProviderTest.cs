@@ -14,7 +14,7 @@ namespace PersonalPage.Tests.Models.Servicies
     {
         readonly private Mockery _mocks = new Mockery();
 
-        [Test]
+        [Test, Category("UnitTest")]
         public void GetUserTimeline()
         {
             string returnJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/Models/Servicies/Tweets.txt");
@@ -26,7 +26,7 @@ namespace PersonalPage.Tests.Models.Servicies
                        .Will(Return.Value(returnJson));
 
             var twitterServiceProvider = new TwitterService();
-            IEnumerable<Tweet> tweets = twitterServiceProvider.GetCompleteUserTimeline(twitterClient);
+            var tweets = twitterServiceProvider.GetCompleteUserTimeline(twitterClient);
 
             Assert.Greater(tweets.Count(), 0, "Number of tweets should be more then 0!");
         }

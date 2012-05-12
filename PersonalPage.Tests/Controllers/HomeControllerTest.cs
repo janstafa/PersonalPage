@@ -7,7 +7,7 @@ namespace PersonalPage.Tests.Controllers
     [TestFixture]
     public class HomeControllerTest
     {
-        [Test]
+        [Test, Category("UnitTest")]
         public void Index()
         {
             // Arrange
@@ -20,7 +20,7 @@ namespace PersonalPage.Tests.Controllers
             Assert.AreEqual("Modify this template to jump-start your ASP.NET MVC application.", result.ViewBag.Message);
         }
 
-        [Test]
+        [Test, Category("UnitTest")]
         public void Contact()
         {
             // Arrange

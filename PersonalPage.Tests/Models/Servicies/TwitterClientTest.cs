@@ -7,10 +7,10 @@ namespace PersonalPage.Tests.Models.Servicies
     [TestFixture]
     public class TwitterClientTest
     {
-        [Test]
+        [Test, Category("UnitTest")]
         public void DoesGetUserTimelineJsonThrowsArgumentNullException()
         {
-            TwitterClient twitterClient = new TwitterClient();
+            var twitterClient = new TwitterClient();
             Assert.Throws<ArgumentNullException>(() => twitterClient.GetRequest(null));
         }
     }
