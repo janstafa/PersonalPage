@@ -15,7 +15,7 @@ namespace PersonalPage.Tests.Models.Servicies
         [Test, Category("UnitTest")]
         public void GetUserTimeline()
         {
-            string returnJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/Models/Servicies/Tweets.txt");
+            var returnJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/Models/Servicies/Tweets.txt");
 
              
             var twitterClient = _mocks.NewMock<ITwitterClient>();

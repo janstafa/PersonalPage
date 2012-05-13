@@ -17,7 +17,7 @@ namespace PersonalPage.Models.Servicies.Twitter
 
             #endregion
 
-            WebClient client = new WebClient();
+            var client = new WebClient();
             return client.DownloadString(requestUri);
         }
     }

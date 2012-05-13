@@ -45,6 +45,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\Library\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\Library\Spring.NET\Spring.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -125,9 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\RecordModel.cs" />
-    <Compile Include="Models\Servicies\OAuth\OAuthLinkedIn.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Models\Servicies\OAuth\OAuthBase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

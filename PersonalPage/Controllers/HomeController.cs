@@ -1,10 +1,21 @@
 ﻿using System.Web.Mvc;
 using PersonalPage.Models.Servicies.Twitter;
+using Spring.Context;
 
 namespace PersonalPage.Controllers
 {
-    public class HomeController : Controller
+
+    public class MainController : Controller
     {
+        //private readonly IApplicationContext _applicationContext = ContextHelper.GetProductionContext();
+    }
+
+    public class HomeController : MainController, IApplicationContextAware
+    {
+        public IApplicationContext ApplicationContext
+        {
+            set { throw new System.NotImplementedException(); }
+        }
         
         public ActionResult Index()
         {
@@ -26,5 +37,7 @@ namespace PersonalPage.Controllers
 
             return View();
         }
+
+       
     }
 }

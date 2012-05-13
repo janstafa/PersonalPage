@@ -1,6 +1,5 @@
 using System;
 using System.Globalization;
-using System.Web.Query.Dynamic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -22,7 +21,7 @@ namespace PersonalPage.Models.Servicies.Twitter
 
             var twitterDateTime = (string)reader.Value;
 
-            DateTime dateTime = DateTime.ParseExact(twitterDateTime, "ddd MMM dd HH:mm:ss zzz yyyy", CultureInfo.InvariantCulture);
+            var dateTime = DateTime.ParseExact(twitterDateTime, "ddd MMM dd HH:mm:ss zzz yyyy", CultureInfo.InvariantCulture);
 
             return dateTime;
         }

@@ -40,6 +40,9 @@
     <Reference Include="nunit.framework">
       <HintPath>..\Library\NUnit\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\Library\Spring.NET\Spring.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
