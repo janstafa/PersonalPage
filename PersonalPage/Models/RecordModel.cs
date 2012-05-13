@@ -10,8 +10,8 @@ namespace PersonalPage.Models
     {
         public IEnumerable<ServiceRecord> GetAllServiceRecords()
         {
-            TwitterService twitterService = new TwitterService();
-            IEnumerable<Tweet> completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
+            var twitterService = new TwitterService();
+            var completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
 
             return completeUserTimeline;
         }
