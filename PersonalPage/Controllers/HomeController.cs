@@ -21,9 +21,9 @@ namespace PersonalPage.Controllers
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            var twitterService = new TwitterService();
+            var twitterService = new TwitterService(new TwitterClient());
 
-            var userTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
+            var userTimeline = twitterService.GetCompleteUserTimeline();
              
             ViewBag.Tweets = userTimeline;
             return View();

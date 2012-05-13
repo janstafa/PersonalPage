@@ -23,8 +23,8 @@ namespace PersonalPage.Tests.Models.Servicies
                        .Method("GetRequest")
                        .Will(Return.Value(returnJson));
 
-            var twitterServiceProvider = new TwitterService();
-            var tweets = twitterServiceProvider.GetCompleteUserTimeline(twitterClient);
+            var twitterServiceProvider = new TwitterService(twitterClient);
+            var tweets = twitterServiceProvider.GetCompleteUserTimeline();
 
             Assert.Greater(tweets.Count(), 0, "Number of tweets should be more then 0!");
         }

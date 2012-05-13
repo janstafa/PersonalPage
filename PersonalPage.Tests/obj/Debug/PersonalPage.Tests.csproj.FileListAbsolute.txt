@@ -11,3 +11,7 @@ C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\P
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\obj\Debug\PersonalPage.Tests.dll
 C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\obj\Debug\PersonalPage.Tests.pdb
+C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\Context\TwitterServiceContext.xml
+C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\Spring.Core.dll
+C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\Common.Logging.dll
+C:\Users\Simon\Workspace\C#\Projects\PersonalPage\PersonalPage.Tests\bin\Debug\Spring.Core.xml

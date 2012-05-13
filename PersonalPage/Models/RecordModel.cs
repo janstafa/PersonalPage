@@ -10,8 +10,8 @@ namespace PersonalPage.Models
     {
         public IEnumerable<ServiceRecord> GetAllServiceRecords()
         {
-            var twitterService = new TwitterService();
-            var completeUserTimeline = twitterService.GetCompleteUserTimeline(new TwitterClient());
+            var twitterService = new TwitterService(new TwitterClient());
+            var completeUserTimeline = twitterService.GetCompleteUserTimeline();
 
             return completeUserTimeline;
         }
@@ -30,8 +30,8 @@ namespace PersonalPage.Models
             switch (serviceType)
             {
                 case ServiceType.Twitter:
-                    TwitterService twitterService = new TwitterService();
-                    result = twitterService.GetCompleteUserTimeline(new TwitterClient());
+                    TwitterService twitterService = new TwitterService(new TwitterClient());
+                    result = twitterService.GetCompleteUserTimeline();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException("serviceType");
