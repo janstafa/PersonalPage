@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Spring.Context.Support;
 using System.IO;
 
@@ -12,8 +13,12 @@ namespace PersonalPage.Library.Helpers
         /// <returns>Return context used for production (release).</returns>
         public static XmlApplicationContext GetProductionContext()
         {
-            string[] filePaths = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory +@"\Context\", "*.xml");
+            var codeBase = Assembly.GetExecutingAssembly().GetName().CodeBase;
+            var localPath = new Uri(codeBase).LocalPath;
+            var directoryName = Path.GetDirectoryName(localPath);
 
+            string[] filePaths = Directory.GetFiles(directoryName + @"\Context\", "*.xml");
+             
             for (int i = 0; i < filePaths.Length; i++)
             {
                 filePaths[i] = "file://" + filePaths[i];

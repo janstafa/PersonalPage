@@ -18,7 +18,7 @@ namespace PersonalPage.Tests.Models
         }
          
 
-        [Test, Category("IntegrationTest")] //todo pomoci DI a mocku z toho udelat unit test
+        [Test, Category("IntegrationTest")] //todo pomoci DI a mocku z toho pridat unit test
         public void CanGetTwitterServiceRecords()
         {
             var serviceRecordModel = new ServiceRecordModel();
