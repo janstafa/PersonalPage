@@ -17,9 +17,9 @@ namespace PersonalPage.Library.Helpers
             var localPath = new Uri(codeBase).LocalPath;
             var directoryName = Path.GetDirectoryName(localPath);
 
-            string[] filePaths = Directory.GetFiles(directoryName + @"\Context\", "*.xml");
+            var filePaths = Directory.GetFiles(directoryName + @"\Context\", "*.xml");
              
-            for (int i = 0; i < filePaths.Length; i++)
+            for (var i = 0; i < filePaths.Length; i++)
             {
                 filePaths[i] = "file://" + filePaths[i];
             }

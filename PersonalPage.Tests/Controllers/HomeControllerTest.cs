@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 using NUnit.Framework;
 using PersonalPage.Controllers;
 
@@ -17,6 +18,7 @@ namespace PersonalPage.Tests.Controllers
             var result = controller.Index() as ViewResult;
 
             // Assert
+            Assert.IsNotNull(result);
             Assert.AreEqual("Modify this template to jump-start your ASP.NET MVC application.", result.ViewBag.Message);
         }
 

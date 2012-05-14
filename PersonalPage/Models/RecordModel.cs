@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using PersonalPage.Models.Entities;
-using PersonalPage.Models.Entities.Twitter;
 using PersonalPage.Models.Servicies.Twitter;
 
 namespace PersonalPage.Models
