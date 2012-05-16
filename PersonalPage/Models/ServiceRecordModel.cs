@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Autofac;
 using PersonalPage.Models.Entities;
 using PersonalPage.Models.Servicies.Twitter;
 
@@ -7,9 +8,16 @@ namespace PersonalPage.Models
 {
     public class ServiceRecordModel
     {
+        private readonly IComponentContext _componentContext;
+
+        public ServiceRecordModel(IComponentContext componentContext)
+        {
+            _componentContext = componentContext;
+        }
+
         public IEnumerable<ServiceRecord> GetAllServiceRecords()
         {
-            var twitterService = new TwitterService(new TwitterClient());
+            var twitterService = _componentContext.Resolve<TwitterService>();
             var completeUserTimeline = twitterService.GetCompleteUserTimeline();
 
             return completeUserTimeline;
@@ -29,7 +37,7 @@ namespace PersonalPage.Models
             switch (serviceType)
             {
                 case ServiceType.Twitter:
-                    TwitterService twitterService = new TwitterService(new TwitterClient());
+                    var twitterService = _componentContext.Resolve<TwitterService>();
                     result = twitterService.GetCompleteUserTimeline();
                     break;
                 default:

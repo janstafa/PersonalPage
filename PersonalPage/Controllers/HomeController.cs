@@ -1,30 +1,23 @@
 ﻿using System.Web.Mvc;
+using Autofac;
+using PersonalPage.Library.Helpers;
 using PersonalPage.Models.Servicies.Twitter;
-using Spring.Context;
 
 namespace PersonalPage.Controllers
 {
-
-    public class MainController : Controller
+    public class HomeController : Controller
     {
-        //private readonly IApplicationContext _applicationContext = ContextHelper.GetProductionContext();
-    }
 
-    public class HomeController : MainController, IApplicationContextAware
-    {
-        public IApplicationContext ApplicationContext
-        {
-            set { throw new System.NotImplementedException(); }
-        }
-        
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            var twitterService = new TwitterService(new TwitterClient());
+            var container = ContainerHelper.Container;
+
+            var twitterService = container.Resolve<TwitterService>();
 
             var userTimeline = twitterService.GetCompleteUserTimeline();
-             
+
             ViewBag.Tweets = userTimeline;
             return View();
         }
@@ -38,6 +31,6 @@ namespace PersonalPage.Controllers
             return View();
         }
 
-       
+
     }
 }

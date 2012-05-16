@@ -1,9 +1,9 @@
-﻿using System;
-using System.IO;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Autofac;
+using PersonalPage.Library.Helpers;
 
 namespace PersonalPage
 {
@@ -12,6 +12,8 @@ namespace PersonalPage
 
     public class MvcApplication : System.Web.HttpApplication
     {
+        private IContainer _container;
+
         private static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
@@ -36,6 +38,9 @@ namespace PersonalPage
 
         protected void Application_Start()
         {
+
+            _container = ContainerHelper.Container;
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
