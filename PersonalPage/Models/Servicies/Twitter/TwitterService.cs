@@ -19,7 +19,7 @@ namespace PersonalPage.Models.Servicies.Twitter
         {
             var twitterClient = _componentContext.Resolve<ITwitterClient>();
 
-            var tweetsJson = twitterClient.GetRequest(new Uri("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=false&include_rts=false&screen_name=janstafa&count=1000000"));
+            var tweetsJson = twitterClient.GetRequest(new Uri("https://aapi.twitter.com/1/statuses/user_timeline.json?include_entities=false&include_rts=false&screen_name=janstafa&count=1000000"));
 
             return JsonConvert.DeserializeObject<IEnumerable<Tweet>>(tweetsJson);
         }

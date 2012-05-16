@@ -7,10 +7,10 @@ using PersonalPage.Models.Servicies.Twitter;
 namespace PersonalPage.Tests.Models.Servicies
 {
 
-    [TestFixture]
+    [TestFixture, Category("UnitTest"), Timeout(500)]
     public class TwitterClientTest
     {
-        [Test, Category("UnitTest")]
+        [Test]
         public void DoesGetUserTimelineJsonThrowsArgumentNullException()
         {
             var container = ContainerHelper.Container;

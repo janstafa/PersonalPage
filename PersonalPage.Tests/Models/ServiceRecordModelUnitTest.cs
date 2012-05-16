@@ -4,27 +4,36 @@ using Autofac;
 using NUnit.Framework;
 using PersonalPage.Library.Helpers;
 using PersonalPage.Models;
+using PersonalPage.Tests.Helpers;
 
 namespace PersonalPage.Tests.Models
 {
-    [TestFixture]
-    class ServiceRecordModelTest
+    [TestFixture, Category("UnitTest"), Timeout(5000)]
+    public class ServiceRecordModelUnitTest
     {
-        [Test, Category("IntegrationTest")] //todo pomoci DI a mocku z toho udelat unit test
+
+        [Test] 
         public void CanGetAllServiceRecords()
         {
-            var container = ContainerHelper.Container;
+            var builder = ContainerHelperTest.GetBuilder();
+            var twitterClient = MockingHelper.GetITwitterClientMockReturnsUserTweetsJsonString();
+            builder.RegisterInstance(twitterClient).AsImplementedInterfaces();
+            var container = builder.Build();
+
 
             var serviceRecordModel = container.Resolve<ServiceRecordModel>();
             var allServiceRecords = serviceRecordModel.GetAllServiceRecords();
 
             Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
         }
-         
-        [Test, Category("IntegrationTest")] 
-        public void CanGetTwitterServiceRecordsIntegrationTest()
+
+       [Test]
+        public void CanGetTwitterServiceRecords()
         {
-            var container = ContainerHelper.Container;
+            var builder = ContainerHelperTest.GetBuilder();
+            var twitterClient = MockingHelper.GetITwitterClientMockReturnsUserTweetsJsonString();
+            builder.RegisterInstance(twitterClient).AsImplementedInterfaces();
+            var container = builder.Build();
 
             var serviceRecordModel = container.Resolve<ServiceRecordModel>();
             var allServiceRecords = serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Twitter);
@@ -32,18 +41,7 @@ namespace PersonalPage.Tests.Models
             Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
         }
 
-        [Test, Category("UnitTest")] //todo pomoci DI a mocku z toho pridat unit test
-        public void CanGetTwitterServiceRecordsUnitTest()
-        {
-            var container = ContainerHelper.Container;
-
-            var serviceRecordModel = container.Resolve<ServiceRecordModel>();
-            var allServiceRecords = serviceRecordModel.GetSpecificServiceRecords(ServiceRecordModel.ServiceType.Twitter);
-
-            Assert.Greater(allServiceRecords.Count(), 0, "Not enough service records!");
-        }
-
-        [Test, Category("UnitTest")]
+        [Test]
         public void CannotGetUnknonwServiceRecords()
         {
             var container = ContainerHelper.Container;

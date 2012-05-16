@@ -74,7 +74,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\ServiceRecordModelTests.cs" />
+    <Compile Include="Models\ServiceRecordModelIntegrationTest.cs" />
+    <Compile Include="Models\ServiceRecordModelUnitTest.cs" />
+    <Compile Include="Helpers\ContainerHelperTest.cs" />
+    <Compile Include="Helpers\MockingHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Models\Servicies\TwitterClientTest.cs" />
