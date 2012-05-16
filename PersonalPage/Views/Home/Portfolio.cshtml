@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Portfolio";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<section class="@ViewBag.Title">
+    <header>
+        <h3>NSPCC Wishes</h3>
+    </header>
+    <p>
+       Whilst working at Cubeworks I have been the lead developer for the NSPCC Wishes microsite - a content-managed Christmas website where users could create and order personal and corporate eCards, purchase Letters From Santa for their children and learn about various other ways to help the NSPCC.
+The site was built using ASP.NET MVC, using Cubeworks' CMS as a back end. nHibernate was used for data persistence, and Windsor was used as the IoC Container.
+    </p>
+</section>
+
+<section class="@ViewBag.Title">
+    <header>
+        <h3>Carebase</h3>
+    </header>
+    <p>
+        In February 2009 I was lead developer on the Carebase Carehomes brochure site.
+The site was built using ASP.NET MVC, using nHibernate for data persistence. Cubeworks' CMS takes care of content management. The site features an integration with Google maps, which was an enjoyable challenge.
+    </p>
+</section>
+
+<section class="@ViewBag.Title">
+    <header>
+        <h3>Pharos Parcel</h3>
+    </header>
+    <p>
+        The Pharos Parcel site was launched in early 2008, and was built using Preview 2 of Microsoft's ASP.NET MVC Framework. The site uses Subsonic for data persistence, and Castle Windsor as the IoC container.
+The site is integrated with a major international courier's web services in order to generate real-time quotes and bookings. Payments are handled through Protx, using a custom Provider.
+I was lead developer on this site whilst working at Cubeworks.
+    </p>
+</section>

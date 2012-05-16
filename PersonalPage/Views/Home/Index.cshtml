@@ -69,9 +69,12 @@
                     Jan Štafa</div>
                 <div style="font-style: italic; font-size: 2em; text-align: right; margin-bottom: 20px">
                     IT Freelancer</div>
-                <div style="">@Html.ActionLink("Kontakt", "Contact", new { controller = "Home" }, new { @class = "various fancybox.ajax" })</div>
+                <div style="">@Html.ActionLink("Development", "Development", new { controller = "Home" }, new { @class = "various fancybox.ajax" })</div>
+                <div style="">@Html.ActionLink("Methodology", "Methodology", new { controller = "Home" }, new { @class = "various fancybox.ajax" })</div>
+                <div style="">@Html.ActionLink("Portfolio", "Portfolio", new { controller = "Home" }, new { @class = "various fancybox.ajax" })</div>
+                <div style="">@Html.ActionLink("Contact", "Contact", new { controller = "Home" }, new { @class = "various fancybox.ajax" })</div>
                 <div style="margin-bottom: 20px">
-                    Životopis</div>
+                    Download Full CV</div>
                 <a class="filter twitter" href="#" rel="twitter" style="margin-left: 200px;">Twitter</a>
                 <a class="filter linkedin" href="#" rel="linkedin" style="margin-left: 180px;">LinkedIn</a>
                 <div style="">
@@ -83,14 +86,14 @@
     </div>
     <div style="float: right; width: 65%; min-width: 400px;">
         <div class="timeline">
-            @foreach (var tweet in ViewBag.Tweets)
+            @foreach (var serviceRecord in ViewBag.ServiceRecords)
             {
 
                 <div class="chat-bubble">
-                    @tweet.Text
-                    <div class="date">@tweet.CreatedAt.ToShortDateString()
+                    @serviceRecord.Text
+                    <div class="date">@serviceRecord.CreatedAt.ToShortDateString()
                     </div>
-                    <div class="time">@tweet.CreatedAt.ToShortTimeString()</div>
+                    <div class="time">@serviceRecord.CreatedAt.ToShortTimeString()</div>
                     <div class="chat-bubble-arrow-border">
                     </div>
                     <div class="chat-bubble-arrow">

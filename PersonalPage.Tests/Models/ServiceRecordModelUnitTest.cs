@@ -8,7 +8,7 @@ using PersonalPage.Tests.Helpers;
 
 namespace PersonalPage.Tests.Models
 {
-    [TestFixture, Category("UnitTest"), Timeout(500)]
+    [TestFixture, Category("UnitTest"), Timeout(600)]
     public class ServiceRecordModelUnitTest
     {
 

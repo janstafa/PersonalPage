@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Methodology";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<section class="@ViewBag.Title">
+    <header>
+        <h3>Agile</h3>
+    </header>
+    <p>
+       I've got plenty of experience of Agile development - all of my projects in the Portfolio section were implemented using a variant taking elements of SCRUM and XP, with fortnightly sprints, daily stand-ups and end-of-sprint client demos.
+    </p>
+</section>
+
+<section class="@ViewBag.Title">
+    <header>
+        <h3>Test Driven Development</h3>
+    </header>
+    <p>
+        I'm a strong advocate of Test Driven Development - I think that the initial investment of time in creating test coverage pays dividends later on. I prefer to use nUnit for tests - it integrates really well with ReSharper and makes running and debugging tests quick and easy.
+For generating mocks I use Rhino Mocks - the AAA syntax and use of lambdas makes mock code terse and easy to follow.
+    </p>
+</section>
+
+<section class="@ViewBag.Title">
+    <header>
+        <h3>Domain Driven Design</h3>
+    </header>
+    <p>
+       DDD is certainly gaining ground these days - I think it makes a huge amount of sense to implement this methodology on a project. It helps to give the coders, management and client a common language, which in turn cuts down on misinterpretations.
+I try to follow the principles of SOLID software design in order to implement projects as cleanly and extensibly as possible. This is facilitated theough use of tools such as Castle Windsor for Inversion of Control / Dependency Injection, and nHibernate (Object/Relational Mapping). By abstracting away the database behind an ORM layer and loosely-coupling code with an IoC container it's easier to keep the Domain pure.
+    </p>
+</section>

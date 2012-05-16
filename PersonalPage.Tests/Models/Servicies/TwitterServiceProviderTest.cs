@@ -10,7 +10,7 @@ using PersonalPage.Tests.Helpers;
 
 namespace PersonalPage.Tests.Models.Servicies
 {
-    [TestFixture, Category("UnitTest")]
+    [TestFixture, Category("UnitTest"), Timeout(500)]
     public class TwitterServiceProviderTest
     {
         [Test]
