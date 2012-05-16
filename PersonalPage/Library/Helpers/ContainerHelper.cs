@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.IO;
+using System.Web.Mvc;
 using Autofac;
 using Autofac.Integration.Mvc;
 
@@ -24,6 +26,9 @@ namespace PersonalPage.Library.Helpers
 
         private static IContainer GetContainer()
         {
+            Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
+
+
             var builder = new ContainerBuilder();
             builder.RegisterAssemblyTypes(typeof (MvcApplication).Assembly);
             builder.RegisterAssemblyTypes(typeof (MvcApplication).Assembly).AsImplementedInterfaces();
