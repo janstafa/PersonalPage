@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Web.Mvc;
+using Autofac;
 using NUnit.Framework;
 using PersonalPage.Controllers;
+using PersonalPage.Library.Helpers;
 
 namespace PersonalPage.Tests.Controllers
 {
@@ -12,7 +14,8 @@ namespace PersonalPage.Tests.Controllers
         public void Index()
         {
             // Arrange
-            var controller = new HomeController();
+            var container = ContainerHelper.Container;
+            var controller = container.Resolve<HomeController>();
 
             // Act
             var result = controller.Index() as ViewResult;
@@ -26,7 +29,8 @@ namespace PersonalPage.Tests.Controllers
         public void Contact()
         {
             // Arrange
-            var controller = new HomeController();
+            var container = ContainerHelper.Container;
+            var controller = container.Resolve<HomeController>();
 
             // Act
             var result = controller.Contact() as ViewResult;

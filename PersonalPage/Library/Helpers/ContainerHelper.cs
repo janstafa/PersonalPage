@@ -12,15 +12,7 @@ namespace PersonalPage.Library.Helpers
 
         public static IContainer Container
         {
-            get
-            {
-                if (_container == null)
-                {
-                    _container = GetContainer();
-                }
-
-                return _container;
-            }
+            get { return _container ?? (_container = GetContainer()); }
         }
 
 
@@ -32,6 +24,7 @@ namespace PersonalPage.Library.Helpers
             var builder = new ContainerBuilder();
             builder.RegisterAssemblyTypes(typeof (MvcApplication).Assembly);
             builder.RegisterAssemblyTypes(typeof (MvcApplication).Assembly).AsImplementedInterfaces();
+            builder.RegisterControllers(Assembly.GetExecutingAssembly());
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

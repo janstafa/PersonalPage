@@ -7,14 +7,18 @@ namespace PersonalPage.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IComponentContext _componentContext;
+
+        public HomeController(IComponentContext componentContext)
+        {
+            _componentContext = componentContext;
+        }
 
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            var container = ContainerHelper.Container;
-
-            var twitterService = container.Resolve<TwitterService>();
+            var twitterService = _componentContext.Resolve<TwitterService>();
 
             var userTimeline = twitterService.GetCompleteUserTimeline();
 
