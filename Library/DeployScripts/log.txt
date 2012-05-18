@@ -1,0 +1,802 @@
+. 2012-05-18 14.43.22.499 --------------------------------------------------------------------------
+. 2012-05-18 14.43.22.499 WinSCP Version 4.3.7 (Build 1679) (OS 6.1.7601 Service Pack 1)
+. 2012-05-18 14.43.22.499 Configuration: C:\Users\Simon\Workspace\CSharp\Projects\PersonalPage\Library\Tools\WinSCP\WinSCP.ini
+. 2012-05-18 14.43.22.500 Local account: Simon-PC\Simon
+. 2012-05-18 14.43.22.500 Login time: 18 May, 2012 14.43.22
+. 2012-05-18 14.43.22.500 --------------------------------------------------------------------------
+. 2012-05-18 14.43.22.500 Session name: solarcorporation_dev@solarcorporation.eu (Ad-Hoc session)
+. 2012-05-18 14.43.22.500 Host name: solarcorporation.eu (Port: 21)
+. 2012-05-18 14.43.22.501 User name: solarcorporation_dev (Password: Yes, Key file: No)
+. 2012-05-18 14.43.22.502 Tunnel: No
+. 2012-05-18 14.43.22.502 Transfer Protocol: FTP
+. 2012-05-18 14.43.22.502 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2012-05-18 14.43.22.502 Proxy: none
+. 2012-05-18 14.43.22.502 FTP: FTPS: None; Passive: Yes [Force IP: No]
+. 2012-05-18 14.43.22.502 Local directory: default, Remote directory: home, Update: No, Cache: Yes
+. 2012-05-18 14.43.22.502 Cache directory changes: Yes, Permanent: Yes
+. 2012-05-18 14.43.22.503 DST mode: 1
+. 2012-05-18 14.43.22.503 --------------------------------------------------------------------------
+. 2012-05-18 14.43.22.508 Connecting to solarcorporation.eu ...
+. 2012-05-18 14.43.22.764 Connected with solarcorporation.eu. Waiting for welcome message...
+< 2012-05-18 14.43.22.854 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2012-05-18 14.43.22.854 220-You are user number 1 of 50 allowed.
+< 2012-05-18 14.43.22.854 220-Local time is now 15:43. Server port: 21.
+< 2012-05-18 14.43.22.854 220-This is a private system - No anonymous login
+< 2012-05-18 14.43.22.854 220-IPv6 connections are also welcome on this server.
+< 2012-05-18 14.43.22.854 220 You will be disconnected after 15 minutes of inactivity.
+> 2012-05-18 14.43.22.854 USER solarcorporation_dev
+< 2012-05-18 14.43.22.922 331 User solarcorporation_dev OK. Password required
+> 2012-05-18 14.43.22.922 PASS *************
+< 2012-05-18 14.43.23.015 230-User solarcorporation_dev has group access to:  virtwww 
+< 2012-05-18 14.43.23.015 230 OK. Current restricted directory is /
+> 2012-05-18 14.43.23.015 SYST
+< 2012-05-18 14.43.23.083 215 UNIX Type: L8
+> 2012-05-18 14.43.23.083 FEAT
+< 2012-05-18 14.43.23.150 211-Extensions supported:
+< 2012-05-18 14.43.23.150  EPRT
+< 2012-05-18 14.43.23.150  IDLE
+< 2012-05-18 14.43.23.150  MDTM
+< 2012-05-18 14.43.23.150  SIZE
+< 2012-05-18 14.43.23.150  REST STREAM
+< 2012-05-18 14.43.23.150  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2012-05-18 14.43.23.150  MLSD
+< 2012-05-18 14.43.23.150  TVFS
+< 2012-05-18 14.43.23.150  ESTP
+< 2012-05-18 14.43.23.150  PASV
+< 2012-05-18 14.43.23.150  EPSV
+< 2012-05-18 14.43.23.150  SPSV
+< 2012-05-18 14.43.23.150  ESTA
+< 2012-05-18 14.43.23.150  AUTH TLS
+< 2012-05-18 14.43.23.150  PBSZ
+< 2012-05-18 14.43.23.150  PROT
+< 2012-05-18 14.43.23.150 211 End.
+. 2012-05-18 14.43.23.150 Connected
+. 2012-05-18 14.43.23.150 --------------------------------------------------------------------------
+. 2012-05-18 14.43.23.150 Using FTP protocol.
+. 2012-05-18 14.43.23.150 Doing startup conversation with host.
+> 2012-05-18 14.43.23.150 PWD
+< 2012-05-18 14.43.23.219 257 "/" is your current location
+. 2012-05-18 14.43.23.220 Getting current directory name.
+. 2012-05-18 14.43.23.220 Startup conversation with host finished.
+< 2012-05-18 14.43.23.220 Script: Active session: [1] solarcorporation_dev@solarcorporation.eu
+> 2012-05-18 14.43.23.221 Script: option exclude "/log"
+< 2012-05-18 14.43.23.221 Script: exclude         /log      
+> 2012-05-18 14.43.23.221 Script: synchronize remote -delete "D:\TeamCityBankAppDeploy\trunk" "/"
+< 2012-05-18 14.43.23.222 Script: Comparing...
+. 2012-05-18 14.43.23.222 Collecting synchronization list for local directory 'D:\TeamCityBankAppDeploy\trunk' and remote directory '/', mode = 0, params = 3
+< 2012-05-18 14.43.23.227 Script: Nothing to synchronize.
+> 2012-05-18 14.43.23.228 Script: rmdir "/Temp/Cache"
+. 2012-05-18 14.43.23.228 Deleting file "/Temp/Cache".
+. 2012-05-18 14.43.23.228 Retrieving directory listing...
+> 2012-05-18 14.43.23.228 CWD /Temp/Cache/
+< 2012-05-18 14.43.23.297 550 Can't change directory to /Temp/Cache/: No such file or directory
+. 2012-05-18 14.43.23.297 Could not retrieve directory listing
+. 2012-05-18 14.43.23.297 Retrieving directory listing...
+> 2012-05-18 14.43.23.297 CWD /Temp/Cache/
+< 2012-05-18 14.43.23.464 550 Can't change directory to /Temp/Cache/: No such file or directory
+. 2012-05-18 14.43.23.464 Could not retrieve directory listing
+. 2012-05-18 14.43.23.465 Asking user:
+. 2012-05-18 14.43.23.465 Error listing directory '/Temp/Cache'. ("Could not retrieve directory listing","Can't change directory to /Temp/Cache/: No such file or directory")
+. 2012-05-18 14.43.23.466 Script: Failed
+> 2012-05-18 14.43.23.467 Script: close
+. 2012-05-18 14.43.23.467 Disconnected from server
+. 2012-05-18 14.48.48.573 --------------------------------------------------------------------------
+. 2012-05-18 14.48.48.573 WinSCP Version 4.3.7 (Build 1679) (OS 6.1.7601 Service Pack 1)
+. 2012-05-18 14.48.48.574 Configuration: C:\Users\Simon\Workspace\CSharp\Projects\PersonalPage\Library\Tools\WinSCP\WinSCP.ini
+. 2012-05-18 14.48.48.575 Local account: Simon-PC\Simon
+. 2012-05-18 14.48.48.575 Login time: 18 May, 2012 14.48.48
+. 2012-05-18 14.48.48.575 --------------------------------------------------------------------------
+. 2012-05-18 14.48.48.575 Session name: stafa@stafa.asp2.cz (Ad-Hoc session)
+. 2012-05-18 14.48.48.575 Host name: stafa.asp2.cz (Port: 21)
+. 2012-05-18 14.48.48.575 User name: stafa (Password: Yes, Key file: No)
+. 2012-05-18 14.48.48.575 Tunnel: No
+. 2012-05-18 14.48.48.575 Transfer Protocol: FTP
+. 2012-05-18 14.48.48.575 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2012-05-18 14.48.48.576 Proxy: none
+. 2012-05-18 14.48.48.576 FTP: FTPS: None; Passive: Yes [Force IP: No]
+. 2012-05-18 14.48.48.576 Local directory: default, Remote directory: home, Update: No, Cache: Yes
+. 2012-05-18 14.48.48.576 Cache directory changes: Yes, Permanent: Yes
+. 2012-05-18 14.48.48.576 DST mode: 1
+. 2012-05-18 14.48.48.576 --------------------------------------------------------------------------
+. 2012-05-18 14.48.48.580 Connecting to stafa.asp2.cz ...
+. 2012-05-18 14.48.48.654 Connected with stafa.asp2.cz. Waiting for welcome message...
+< 2012-05-18 14.48.48.953 220 Microsoft FTP Service
+> 2012-05-18 14.48.48.953 USER stafa
+< 2012-05-18 14.48.49.020 331 Password required for stafa.
+> 2012-05-18 14.48.49.020 PASS *********
+< 2012-05-18 14.48.49.087 230 User logged in.
+> 2012-05-18 14.48.49.087 SYST
+< 2012-05-18 14.48.49.154 215 Windows_NT
+> 2012-05-18 14.48.49.155 FEAT
+< 2012-05-18 14.48.49.222 211-Extended features supported:
+< 2012-05-18 14.48.49.222  LANG EN*
+< 2012-05-18 14.48.49.222  UTF8
+< 2012-05-18 14.48.49.222  AUTH TLS;TLS-C;SSL;TLS-P;
+< 2012-05-18 14.48.49.222  PBSZ
+< 2012-05-18 14.48.49.222  PROT C;P;
+< 2012-05-18 14.48.49.222  CCC
+< 2012-05-18 14.48.49.222  HOST
+< 2012-05-18 14.48.49.222  SIZE
+< 2012-05-18 14.48.49.222  MDTM
+< 2012-05-18 14.48.49.222  REST STREAM
+< 2012-05-18 14.48.49.222 211 END
+> 2012-05-18 14.48.49.223 OPTS UTF8 ON
+< 2012-05-18 14.48.49.288 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+. 2012-05-18 14.48.49.288 Connected
+. 2012-05-18 14.48.49.288 --------------------------------------------------------------------------
+. 2012-05-18 14.48.49.289 Using FTP protocol.
+. 2012-05-18 14.48.49.290 Doing startup conversation with host.
+> 2012-05-18 14.48.49.290 PWD
+< 2012-05-18 14.48.49.356 257 "/stafa" is current directory.
+. 2012-05-18 14.48.49.357 Getting current directory name.
+. 2012-05-18 14.48.49.357 Startup conversation with host finished.
+< 2012-05-18 14.48.49.357 Script: Active session: [1] stafa@stafa.asp2.cz
+> 2012-05-18 14.48.49.358 Script: synchronize remote -delete "../../../PersonalPage/bin" "/wwwroot/bin/"
+< 2012-05-18 14.48.49.358 Script: Comparing...
+. 2012-05-18 14.48.49.358 Collecting synchronization list for local directory '../../../PersonalPage/bin' and remote directory '/wwwroot/bin/', mode = 0, params = 3
+. 2012-05-18 14.48.49.361 Retrieving directory listing...
+> 2012-05-18 14.48.49.361 CWD /wwwroot/bin/
+< 2012-05-18 14.48.49.428 550 The system cannot find the path specified. 
+. 2012-05-18 14.48.49.428 Could not retrieve directory listing
+. 2012-05-18 14.48.49.428 Retrieving directory listing...
+> 2012-05-18 14.48.49.428 CWD /wwwroot/bin/
+< 2012-05-18 14.48.49.495 550 The system cannot find the path specified. 
+. 2012-05-18 14.48.49.495 Could not retrieve directory listing
+. 2012-05-18 14.48.49.496 Asking user:
+. 2012-05-18 14.48.49.496 Error listing directory '/wwwroot/bin'. ("Could not retrieve directory listing","The system cannot find the path specified. ")
+. 2012-05-18 14.48.49.497 Script: Failed
+> 2012-05-18 14.48.49.497 Script: synchronize remote -delete "../../../PersonalPage/Views" "/wwwroot/Views/"
+< 2012-05-18 14.48.49.497 Script: Comparing...
+. 2012-05-18 14.48.49.498 Collecting synchronization list for local directory '../../../PersonalPage/Views' and remote directory '/wwwroot/Views/', mode = 0, params = 3
+. 2012-05-18 14.48.49.498 Retrieving directory listing...
+> 2012-05-18 14.48.49.498 CWD /wwwroot/Views/
+< 2012-05-18 14.48.49.565 550 The system cannot find the path specified. 
+. 2012-05-18 14.48.49.565 Could not retrieve directory listing
+. 2012-05-18 14.48.49.566 Asking user:
+. 2012-05-18 14.48.49.566 Error listing directory '/wwwroot/Views'. ("Could not retrieve directory listing","The system cannot find the path specified. ")
+. 2012-05-18 14.48.49.568 Script: Failed
+> 2012-05-18 14.48.49.569 Script: synchronize remote -delete "../../../PersonalPage/Content" "/wwwroot/Content/"
+< 2012-05-18 14.48.49.569 Script: Comparing...
+. 2012-05-18 14.48.49.569 Collecting synchronization list for local directory '../../../PersonalPage/Content' and remote directory '/wwwroot/Content/', mode = 0, params = 3
+. 2012-05-18 14.48.49.570 Retrieving directory listing...
+> 2012-05-18 14.48.49.570 CWD /wwwroot/Content/
+< 2012-05-18 14.48.49.637 550 The system cannot find the path specified. 
+. 2012-05-18 14.48.49.638 Could not retrieve directory listing
+. 2012-05-18 14.48.49.638 Asking user:
+. 2012-05-18 14.48.49.638 Error listing directory '/wwwroot/Content'. ("Could not retrieve directory listing","The system cannot find the path specified. ")
+. 2012-05-18 14.48.49.640 Script: Failed
+> 2012-05-18 14.48.49.641 Script: synchronize remote -delete "../../../PersonalPage/Web.config" "/wwwroot/Web.config"
+< 2012-05-18 14.48.49.641 Script: Comparing...
+. 2012-05-18 14.48.49.641 Collecting synchronization list for local directory '../../../PersonalPage/Web.config' and remote directory '/wwwroot/Web.config', mode = 0, params = 3
+< 2012-05-18 14.48.49.642 Script: Nothing to synchronize.
+> 2012-05-18 14.48.49.643 Script: synchronize remote -delete "../../../PersonalPage/packages.config" "/wwwroot/packages.config"
+< 2012-05-18 14.48.49.644 Script: Comparing...
+. 2012-05-18 14.48.49.644 Collecting synchronization list for local directory '../../../PersonalPage/packages.config' and remote directory '/wwwroot/packages.config', mode = 0, params = 3
+< 2012-05-18 14.48.49.645 Script: Nothing to synchronize.
+> 2012-05-18 14.48.49.646 Script: synchronize remote -delete "../../../PersonalPage/global.asax" "/wwwroot/global.asax"
+< 2012-05-18 14.48.49.646 Script: Comparing...
+. 2012-05-18 14.48.49.647 Collecting synchronization list for local directory '../../../PersonalPage/global.asax' and remote directory '/wwwroot/global.asax', mode = 0, params = 3
+< 2012-05-18 14.48.49.647 Script: Nothing to synchronize.
+> 2012-05-18 14.48.49.649 Script: close
+. 2012-05-18 14.48.49.655 Disconnected from server
+. 2012-05-18 14.51.45.474 --------------------------------------------------------------------------
+. 2012-05-18 14.51.45.474 WinSCP Version 4.3.7 (Build 1679) (OS 6.1.7601 Service Pack 1)
+. 2012-05-18 14.51.45.475 Configuration: C:\Users\Simon\Workspace\CSharp\Projects\PersonalPage\Library\Tools\WinSCP\WinSCP.ini
+. 2012-05-18 14.51.45.476 Local account: Simon-PC\Simon
+. 2012-05-18 14.51.45.476 Login time: 18 May, 2012 14.51.45
+. 2012-05-18 14.51.45.476 --------------------------------------------------------------------------
+. 2012-05-18 14.51.45.476 Session name: stafa@stafa.asp2.cz (Ad-Hoc session)
+. 2012-05-18 14.51.45.476 Host name: stafa.asp2.cz (Port: 21)
+. 2012-05-18 14.51.45.476 User name: stafa (Password: Yes, Key file: No)
+. 2012-05-18 14.51.45.476 Tunnel: No
+. 2012-05-18 14.51.45.477 Transfer Protocol: FTP
+. 2012-05-18 14.51.45.477 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2012-05-18 14.51.45.477 Proxy: none
+. 2012-05-18 14.51.45.477 FTP: FTPS: None; Passive: Yes [Force IP: No]
+. 2012-05-18 14.51.45.477 Local directory: default, Remote directory: home, Update: No, Cache: Yes
+. 2012-05-18 14.51.45.477 Cache directory changes: Yes, Permanent: Yes
+. 2012-05-18 14.51.45.477 DST mode: 1
+. 2012-05-18 14.51.45.477 --------------------------------------------------------------------------
+. 2012-05-18 14.51.45.488 Connecting to stafa.asp2.cz ...
+. 2012-05-18 14.51.45.565 Connected with stafa.asp2.cz. Waiting for welcome message...
+< 2012-05-18 14.51.45.904 220 Microsoft FTP Service
+> 2012-05-18 14.51.45.904 USER stafa
+< 2012-05-18 14.51.45.972 331 Password required for stafa.
+> 2012-05-18 14.51.45.972 PASS *********
+< 2012-05-18 14.51.46.039 230 User logged in.
+> 2012-05-18 14.51.46.040 SYST
+< 2012-05-18 14.51.46.107 215 Windows_NT
+> 2012-05-18 14.51.46.107 FEAT
+< 2012-05-18 14.51.46.175 211-Extended features supported:
+< 2012-05-18 14.51.46.175  LANG EN*
+< 2012-05-18 14.51.46.175  UTF8
+< 2012-05-18 14.51.46.175  AUTH TLS;TLS-C;SSL;TLS-P;
+< 2012-05-18 14.51.46.175  PBSZ
+< 2012-05-18 14.51.46.175  PROT C;P;
+< 2012-05-18 14.51.46.175  CCC
+< 2012-05-18 14.51.46.175  HOST
+< 2012-05-18 14.51.46.175  SIZE
+< 2012-05-18 14.51.46.175  MDTM
+< 2012-05-18 14.51.46.175  REST STREAM
+< 2012-05-18 14.51.46.175 211 END
+> 2012-05-18 14.51.46.176 OPTS UTF8 ON
+< 2012-05-18 14.51.46.241 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+. 2012-05-18 14.51.46.242 Connected
+. 2012-05-18 14.51.46.242 --------------------------------------------------------------------------
+. 2012-05-18 14.51.46.242 Using FTP protocol.
+. 2012-05-18 14.51.46.243 Doing startup conversation with host.
+> 2012-05-18 14.51.46.243 PWD
+< 2012-05-18 14.51.46.310 257 "/stafa" is current directory.
+. 2012-05-18 14.51.46.311 Getting current directory name.
+. 2012-05-18 14.51.46.311 Startup conversation with host finished.
+< 2012-05-18 14.51.46.311 Script: Active session: [1] stafa@stafa.asp2.cz
+> 2012-05-18 14.51.46.311 Script: synchronize remote -delete "../../../PersonalPage/bin" "/stafa/wwwroot/bin/"
+< 2012-05-18 14.51.46.312 Script: Comparing...
+. 2012-05-18 14.51.46.312 Collecting synchronization list for local directory '../../../PersonalPage/bin' and remote directory '/stafa/wwwroot/bin/', mode = 0, params = 3
+. 2012-05-18 14.51.46.314 Retrieving directory listing...
+> 2012-05-18 14.51.46.314 CWD /stafa/wwwroot/bin/
+< 2012-05-18 14.51.46.383 250 CWD command successful.
+> 2012-05-18 14.51.46.384 PWD
+< 2012-05-18 14.51.46.450 257 "/stafa/wwwroot/bin" is current directory.
+> 2012-05-18 14.51.46.450 TYPE A
+< 2012-05-18 14.51.46.517 200 Type set to A.
+> 2012-05-18 14.51.46.517 PASV
+< 2012-05-18 14.51.46.584 227 Entering Passive Mode (217,198,114,7,19,161).
+> 2012-05-18 14.51.46.584 LIST -a
+< 2012-05-18 14.51.46.653 150 Opening ASCII mode data connection.
+< 2012-05-18 14.51.46.730 226 Transfer complete.
+. 2012-05-18 14.51.46.730 Directory listing successful
+< 2012-05-18 14.51.46.826 Script: Synchronizing...
+. 2012-05-18 14.51.46.827 Synchronizing local directory '../../../PersonalPage/bin\' with remote directory '/stafa/wwwroot/bin/', params = 3
+. 2012-05-18 14.51.46.827 Copying 12 files/directories to remote directory "/stafa/wwwroot/bin/"
+. 2012-05-18 14.51.46.827   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 01; Resume: S (102400); CalcS: No; Mask: *.*
+. 2012-05-18 14.51.46.827   TM: M; ClAr: No; CPS: 0; ExclM(No): 
+. 2012-05-18 14.51.46.827   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2012-05-18 14.51.46.828 File: "../../../PersonalPage/bin\Autofac.Configuration.dll"
+< 2012-05-18 14.51.46.840 Script: Local '../../../PersonalPage/bin' => Remote '/stafa/wwwroot/bin'
+. 2012-05-18 14.51.46.841 Copying "../../../PersonalPage/bin\Autofac.Configuration.dll" to remote directory started.
+. 2012-05-18 14.51.46.841 Binary transfer mode selected.
+. 2012-05-18 14.51.46.842 Starting upload of ../../../PersonalPage/bin\Autofac.Configuration.dll
+> 2012-05-18 14.51.46.842 TYPE I
+< 2012-05-18 14.51.46.910 200 Type set to I.
+> 2012-05-18 14.51.46.910 PASV
+< 2012-05-18 14.51.46.976 227 Entering Passive Mode (217,198,114,7,19,163).
+> 2012-05-18 14.51.46.977 STOR Autofac.Configuration.dll
+< 2012-05-18 14.51.47.047 150 Opening BINARY mode data connection.
+< 2012-05-18 14.51.47.331 226 Transfer complete.
+. 2012-05-18 14.51.47.331 Upload successful
+. 2012-05-18 14.51.47.332 File: "../../../PersonalPage/bin\Autofac.dll"
+. 2012-05-18 14.51.47.333 Copying "../../../PersonalPage/bin\Autofac.dll" to remote directory started.
+. 2012-05-18 14.51.47.333 Binary transfer mode selected.
+. 2012-05-18 14.51.47.334 Starting upload of ../../../PersonalPage/bin\Autofac.dll
+> 2012-05-18 14.51.47.334 TYPE I
+< 2012-05-18 14.51.47.400 200 Type set to I.
+> 2012-05-18 14.51.47.400 PASV
+< 2012-05-18 14.51.47.467 227 Entering Passive Mode (217,198,114,7,19,171).
+> 2012-05-18 14.51.47.467 STOR Autofac.dll
+< 2012-05-18 14.51.47.535 150 Opening BINARY mode data connection.
+< 2012-05-18 14.51.48.215 226 Transfer complete.
+. 2012-05-18 14.51.48.216 Upload successful
+. 2012-05-18 14.51.48.216 File: "../../../PersonalPage/bin\Autofac.Integration.Mvc.dll"
+. 2012-05-18 14.51.48.217 Copying "../../../PersonalPage/bin\Autofac.Integration.Mvc.dll" to remote directory started.
+. 2012-05-18 14.51.48.218 Binary transfer mode selected.
+. 2012-05-18 14.51.48.218 Starting upload of ../../../PersonalPage/bin\Autofac.Integration.Mvc.dll
+> 2012-05-18 14.51.48.218 TYPE I
+< 2012-05-18 14.51.48.284 200 Type set to I.
+> 2012-05-18 14.51.48.284 PASV
+< 2012-05-18 14.51.48.351 227 Entering Passive Mode (217,198,114,7,19,173).
+> 2012-05-18 14.51.48.351 STOR Autofac.Integration.Mvc.dll
+< 2012-05-18 14.51.48.419 150 Opening BINARY mode data connection.
+< 2012-05-18 14.51.48.701 226 Transfer complete.
+. 2012-05-18 14.51.48.701 Upload successful
+. 2012-05-18 14.51.48.702 File: "../../../PersonalPage/bin\Autofac.xml"
+. 2012-05-18 14.51.48.702 Copying "../../../PersonalPage/bin\Autofac.xml" to remote directory started.
+. 2012-05-18 14.51.48.703 Ascii transfer mode selected.
+. 2012-05-18 14.51.48.703 Starting upload of ../../../PersonalPage/bin\Autofac.xml
+> 2012-05-18 14.51.48.703 TYPE A
+< 2012-05-18 14.51.48.770 200 Type set to A.
+> 2012-05-18 14.51.48.770 PASV
+< 2012-05-18 14.51.48.837 227 Entering Passive Mode (217,198,114,7,19,185).
+> 2012-05-18 14.51.48.837 STOR Autofac.xml
+< 2012-05-18 14.51.48.905 150 Opening ASCII mode data connection.
+< 2012-05-18 14.51.49.927 226 Transfer complete.
+. 2012-05-18 14.51.49.928 Upload successful
+. 2012-05-18 14.51.49.928 File: "../../../PersonalPage/bin\Context"
+. 2012-05-18 14.51.49.929 File: "../../../PersonalPage/bin\Context\TwitterServiceContext.xml"
+. 2012-05-18 14.51.49.930 Copying "../../../PersonalPage/bin\Context\TwitterServiceContext.xml" to remote directory started.
+. 2012-05-18 14.51.49.930 Ascii transfer mode selected.
+. 2012-05-18 14.51.49.931 Starting upload of ../../../PersonalPage/bin\Context\TwitterServiceContext.xml
+> 2012-05-18 14.51.49.931 CWD /stafa/wwwroot/bin/Context/
+< 2012-05-18 14.51.49.999 550 The system cannot find the file specified. 
+> 2012-05-18 14.51.49.999 CWD /stafa/wwwroot/bin/
+< 2012-05-18 14.51.50.067 250 CWD command successful.
+> 2012-05-18 14.51.50.067 MKD Context
+< 2012-05-18 14.51.50.136 257 "Context" directory created.
+> 2012-05-18 14.51.50.136 CWD /stafa/wwwroot/bin/Context/
+< 2012-05-18 14.51.50.204 250 CWD command successful.
+> 2012-05-18 14.51.50.204 PWD
+< 2012-05-18 14.51.50.271 257 "/stafa/wwwroot/bin/Context" is current directory.
+> 2012-05-18 14.51.50.271 TYPE A
+< 2012-05-18 14.51.50.337 200 Type set to A.
+> 2012-05-18 14.51.50.337 PASV
+< 2012-05-18 14.51.50.404 227 Entering Passive Mode (217,198,114,7,19,186).
+> 2012-05-18 14.51.50.405 LIST -a
+< 2012-05-18 14.51.50.472 150 Opening ASCII mode data connection.
+< 2012-05-18 14.51.50.538 226 Transfer complete.
+> 2012-05-18 14.51.50.539 TYPE A
+< 2012-05-18 14.51.50.605 200 Type set to A.
+> 2012-05-18 14.51.50.605 PASV
+< 2012-05-18 14.51.50.672 227 Entering Passive Mode (217,198,114,7,23,93).
+> 2012-05-18 14.51.50.672 STOR TwitterServiceContext.xml
+< 2012-05-18 14.51.50.741 150 Opening ASCII mode data connection.
+< 2012-05-18 14.51.50.822 226 Transfer complete.
+. 2012-05-18 14.51.50.822 Upload successful
+. 2012-05-18 14.51.50.823 File: "../../../PersonalPage/bin\Microsoft.Practices.ServiceLocation.dll"
+. 2012-05-18 14.51.50.824 Copying "../../../PersonalPage/bin\Microsoft.Practices.ServiceLocation.dll" to remote directory started.
+. 2012-05-18 14.51.50.825 Binary transfer mode selected.
+. 2012-05-18 14.51.50.825 Starting upload of ../../../PersonalPage/bin\Microsoft.Practices.ServiceLocation.dll
+> 2012-05-18 14.51.50.825 CWD /stafa/wwwroot/bin/
+< 2012-05-18 14.51.50.894 250 CWD command successful.
+> 2012-05-18 14.51.50.894 PWD
+< 2012-05-18 14.51.50.960 257 "/stafa/wwwroot/bin" is current directory.
+> 2012-05-18 14.51.50.960 TYPE A
+< 2012-05-18 14.51.51.027 200 Type set to A.
+> 2012-05-18 14.51.51.027 PASV
+< 2012-05-18 14.51.51.093 227 Entering Passive Mode (217,198,114,7,19,187).
+> 2012-05-18 14.51.51.094 LIST -a
+< 2012-05-18 14.51.51.162 150 Opening ASCII mode data connection.
+< 2012-05-18 14.51.51.228 226 Transfer complete.
+> 2012-05-18 14.51.51.228 TYPE I
+< 2012-05-18 14.51.51.296 200 Type set to I.
+> 2012-05-18 14.51.51.296 PASV
+< 2012-05-18 14.51.51.364 227 Entering Passive Mode (217,198,114,7,19,197).
+> 2012-05-18 14.51.51.364 STOR Microsoft.Practices.ServiceLocation.dll
+< 2012-05-18 14.51.51.432 150 Opening BINARY mode data connection.
+< 2012-05-18 14.51.51.710 226 Transfer complete.
+. 2012-05-18 14.51.51.710 Upload successful
+. 2012-05-18 14.51.51.711 File: "../../../PersonalPage/bin\Microsoft.Practices.ServiceLocation.xml"
+. 2012-05-18 14.51.51.711 Copying "../../../PersonalPage/bin\Microsoft.Practices.ServiceLocation.xml" to remote directory started.
+. 2012-05-18 14.51.51.712 Ascii transfer mode selected.
+. 2012-05-18 14.51.51.712 Starting upload of ../../../PersonalPage/bin\Microsoft.Practices.ServiceLocation.xml
+> 2012-05-18 14.51.51.713 TYPE A
+< 2012-05-18 14.51.51.780 200 Type set to A.
+> 2012-05-18 14.51.51.780 PASV
+< 2012-05-18 14.51.51.847 227 Entering Passive Mode (217,198,114,7,19,196).
+> 2012-05-18 14.51.51.847 STOR Microsoft.Practices.ServiceLocation.xml
+< 2012-05-18 14.51.51.916 150 Opening ASCII mode data connection.
+< 2012-05-18 14.51.52.126 226 Transfer complete.
+. 2012-05-18 14.51.52.126 Upload successful
+. 2012-05-18 14.51.52.127 File: "../../../PersonalPage/bin\PersonalPage.dll"
+. 2012-05-18 14.51.52.128 Copying "../../../PersonalPage/bin\PersonalPage.dll" to remote directory started.
+. 2012-05-18 14.51.52.128 Binary transfer mode selected.
+. 2012-05-18 14.51.52.128 Starting upload of ../../../PersonalPage/bin\PersonalPage.dll
+> 2012-05-18 14.51.52.129 TYPE I
+< 2012-05-18 14.51.52.195 200 Type set to I.
+> 2012-05-18 14.51.52.196 PASV
+< 2012-05-18 14.51.52.262 227 Entering Passive Mode (217,198,114,7,19,213).
+> 2012-05-18 14.51.52.263 STOR PersonalPage.dll
+< 2012-05-18 14.51.52.331 150 Opening BINARY mode data connection.
+< 2012-05-18 14.51.52.545 226 Transfer complete.
+. 2012-05-18 14.51.52.545 Upload successful
+. 2012-05-18 14.51.52.546 File: "../../../PersonalPage/bin\PersonalPage.pdb"
+. 2012-05-18 14.51.52.574 Copying "../../../PersonalPage/bin\PersonalPage.pdb" to remote directory started.
+. 2012-05-18 14.51.52.574 Binary transfer mode selected.
+. 2012-05-18 14.51.52.575 Starting upload of ../../../PersonalPage/bin\PersonalPage.pdb
+> 2012-05-18 14.51.52.575 TYPE I
+< 2012-05-18 14.51.52.641 200 Type set to I.
+> 2012-05-18 14.51.52.641 PASV
+< 2012-05-18 14.51.52.708 227 Entering Passive Mode (217,198,114,7,19,211).
+> 2012-05-18 14.51.52.709 STOR PersonalPage.pdb
+< 2012-05-18 14.51.52.777 150 Opening BINARY mode data connection.
+< 2012-05-18 14.51.53.046 226 Transfer complete.
+. 2012-05-18 14.51.53.046 Upload successful
+. 2012-05-18 14.51.53.047 File: "../../../PersonalPage/bin\System.Web.Abstractions.dll"
+. 2012-05-18 14.51.53.048 Copying "../../../PersonalPage/bin\System.Web.Abstractions.dll" to remote directory started.
+. 2012-05-18 14.51.53.049 Binary transfer mode selected.
+. 2012-05-18 14.51.53.049 Starting upload of ../../../PersonalPage/bin\System.Web.Abstractions.dll
+> 2012-05-18 14.51.53.049 TYPE I
+< 2012-05-18 14.51.53.116 200 Type set to I.
+> 2012-05-18 14.51.53.116 PASV
+< 2012-05-18 14.51.53.183 227 Entering Passive Mode (217,198,114,7,19,199).
+> 2012-05-18 14.51.53.184 STOR System.Web.Abstractions.dll
+< 2012-05-18 14.51.53.252 150 Opening BINARY mode data connection.
+< 2012-05-18 14.51.53.543 226 Transfer complete.
+. 2012-05-18 14.51.53.543 Upload successful
+. 2012-05-18 14.51.53.544 File: "../../../PersonalPage/bin\System.Web.dll"
+. 2012-05-18 14.51.53.544 Copying "../../../PersonalPage/bin\System.Web.dll" to remote directory started.
+. 2012-05-18 14.51.53.545 Binary transfer mode selected.
+. 2012-05-18 14.51.53.545 Starting upload of ../../../PersonalPage/bin\System.Web.dll
+> 2012-05-18 14.51.53.545 TYPE I
+< 2012-05-18 14.51.53.612 200 Type set to I.
+> 2012-05-18 14.51.53.612 PASV
+< 2012-05-18 14.51.53.679 227 Entering Passive Mode (217,198,114,7,19,175).
+> 2012-05-18 14.51.53.679 STOR System.Web.dll
+< 2012-05-18 14.51.53.747 150 Opening BINARY mode data connection.
+< 2012-05-18 14.51.59.897 226 Transfer complete.
+. 2012-05-18 14.51.59.897 Upload successful
+. 2012-05-18 14.51.59.898 File: "../../../PersonalPage/bin\System.Web.Routing.dll"
+. 2012-05-18 14.51.59.898 Copying "../../../PersonalPage/bin\System.Web.Routing.dll" to remote directory started.
+. 2012-05-18 14.51.59.899 Binary transfer mode selected.
+. 2012-05-18 14.51.59.899 Starting upload of ../../../PersonalPage/bin\System.Web.Routing.dll
+> 2012-05-18 14.51.59.899 TYPE I
+< 2012-05-18 14.51.59.966 200 Type set to I.
+> 2012-05-18 14.51.59.966 PASV
+< 2012-05-18 14.52.00.032 227 Entering Passive Mode (217,198,114,7,19,157).
+> 2012-05-18 14.52.00.032 STOR System.Web.Routing.dll
+< 2012-05-18 14.52.00.100 150 Opening BINARY mode data connection.
+< 2012-05-18 14.52.00.388 226 Transfer complete.
+. 2012-05-18 14.52.00.389 Upload successful
+> 2012-05-18 14.52.00.389 Script: synchronize remote -delete "../../../PersonalPage/Views" "/stafa/wwwroot/Views/"
+< 2012-05-18 14.52.00.390 Script: Comparing...
+. 2012-05-18 14.52.00.390 Collecting synchronization list for local directory '../../../PersonalPage/Views' and remote directory '/stafa/wwwroot/Views/', mode = 0, params = 3
+. 2012-05-18 14.52.00.391 Retrieving directory listing...
+> 2012-05-18 14.52.00.391 CWD /stafa/wwwroot/Views/
+< 2012-05-18 14.52.00.458 250 CWD command successful.
+> 2012-05-18 14.52.00.458 PWD
+< 2012-05-18 14.52.00.525 257 "/stafa/wwwroot/Views" is current directory.
+> 2012-05-18 14.52.00.525 TYPE A
+< 2012-05-18 14.52.00.592 200 Type set to A.
+> 2012-05-18 14.52.00.592 PASV
+< 2012-05-18 14.52.00.659 227 Entering Passive Mode (217,198,114,7,19,220).
+> 2012-05-18 14.52.00.659 LIST -a
+< 2012-05-18 14.52.00.728 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.00.793 226 Transfer complete.
+. 2012-05-18 14.52.00.793 Directory listing successful
+. 2012-05-18 14.52.00.794 Collecting synchronization list for local directory '../../../PersonalPage/Views\Home' and remote directory '/stafa/wwwroot/Views/Home', mode = 0, params = 3
+. 2012-05-18 14.52.00.794 Retrieving directory listing...
+> 2012-05-18 14.52.00.794 CWD /stafa/wwwroot/Views/Home/
+< 2012-05-18 14.52.00.862 250 CWD command successful.
+> 2012-05-18 14.52.00.862 PWD
+< 2012-05-18 14.52.00.928 257 "/stafa/wwwroot/Views/Home" is current directory.
+> 2012-05-18 14.52.00.929 TYPE A
+< 2012-05-18 14.52.00.995 200 Type set to A.
+> 2012-05-18 14.52.00.995 PASV
+< 2012-05-18 14.52.01.062 227 Entering Passive Mode (217,198,114,7,19,212).
+> 2012-05-18 14.52.01.062 LIST -a
+< 2012-05-18 14.52.01.130 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.01.196 226 Transfer complete.
+. 2012-05-18 14.52.01.196 Directory listing successful
+. 2012-05-18 14.52.01.197 Collecting synchronization list for local directory '../../../PersonalPage/Views\Shared' and remote directory '/stafa/wwwroot/Views/Shared', mode = 0, params = 3
+. 2012-05-18 14.52.01.199 Retrieving directory listing...
+> 2012-05-18 14.52.01.199 CWD /stafa/wwwroot/Views/Shared/
+< 2012-05-18 14.52.01.267 250 CWD command successful.
+> 2012-05-18 14.52.01.267 PWD
+< 2012-05-18 14.52.01.333 257 "/stafa/wwwroot/Views/Shared" is current directory.
+> 2012-05-18 14.52.01.333 TYPE A
+< 2012-05-18 14.52.01.399 200 Type set to A.
+> 2012-05-18 14.52.01.400 PASV
+< 2012-05-18 14.52.01.466 227 Entering Passive Mode (217,198,114,7,19,230).
+> 2012-05-18 14.52.01.466 LIST -a
+< 2012-05-18 14.52.01.534 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.01.600 226 Transfer complete.
+. 2012-05-18 14.52.01.600 Directory listing successful
+< 2012-05-18 14.52.01.602 Script: Synchronizing...
+. 2012-05-18 14.52.01.602 Synchronizing local directory '../../../PersonalPage/Views\Home\' with remote directory '/stafa/wwwroot/Views/Home/', params = 3
+. 2012-05-18 14.52.01.602 Copying 4 files/directories to remote directory "/stafa/wwwroot/Views/Home/"
+. 2012-05-18 14.52.01.602   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 01; Resume: S (102400); CalcS: No; Mask: *.*
+. 2012-05-18 14.52.01.603   TM: M; ClAr: No; CPS: 0; ExclM(No): 
+. 2012-05-18 14.52.01.603   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2012-05-18 14.52.01.603 File: "../../../PersonalPage/Views\Home\Development.cshtml"
+< 2012-05-18 14.52.01.603 Script: Local '../../../PersonalPage/Views\Home' => Remote '/stafa/wwwroot/Views/Home'
+. 2012-05-18 14.52.01.604 Copying "../../../PersonalPage/Views\Home\Development.cshtml" to remote directory started.
+. 2012-05-18 14.52.01.604 Ascii transfer mode selected.
+. 2012-05-18 14.52.01.605 Starting upload of ../../../PersonalPage/Views\Home\Development.cshtml
+> 2012-05-18 14.52.01.605 CWD /stafa/wwwroot/Views/Home/
+< 2012-05-18 14.52.01.672 250 CWD command successful.
+> 2012-05-18 14.52.01.672 PWD
+< 2012-05-18 14.52.01.739 257 "/stafa/wwwroot/Views/Home" is current directory.
+> 2012-05-18 14.52.01.739 TYPE A
+< 2012-05-18 14.52.01.805 200 Type set to A.
+> 2012-05-18 14.52.01.805 PASV
+< 2012-05-18 14.52.01.873 227 Entering Passive Mode (217,198,114,7,19,208).
+> 2012-05-18 14.52.01.873 LIST -a
+< 2012-05-18 14.52.01.940 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.02.007 226 Transfer complete.
+> 2012-05-18 14.52.02.007 TYPE A
+< 2012-05-18 14.52.02.073 200 Type set to A.
+> 2012-05-18 14.52.02.073 PASV
+< 2012-05-18 14.52.02.140 227 Entering Passive Mode (217,198,114,7,19,226).
+> 2012-05-18 14.52.02.141 STOR Development.cshtml
+< 2012-05-18 14.52.02.209 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.02.302 226 Transfer complete.
+. 2012-05-18 14.52.02.302 Upload successful
+. 2012-05-18 14.52.02.303 File: "../../../PersonalPage/Views\Home\Index.cshtml"
+. 2012-05-18 14.52.02.304 Copying "../../../PersonalPage/Views\Home\Index.cshtml" to remote directory started.
+. 2012-05-18 14.52.02.304 Ascii transfer mode selected.
+. 2012-05-18 14.52.02.305 Starting upload of ../../../PersonalPage/Views\Home\Index.cshtml
+> 2012-05-18 14.52.02.305 TYPE A
+< 2012-05-18 14.52.02.375 200 Type set to A.
+> 2012-05-18 14.52.02.375 PASV
+< 2012-05-18 14.52.02.441 227 Entering Passive Mode (217,198,114,7,19,225).
+> 2012-05-18 14.52.02.442 STOR Index.cshtml
+< 2012-05-18 14.52.02.509 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.02.652 226 Transfer complete.
+. 2012-05-18 14.52.02.653 Upload successful
+. 2012-05-18 14.52.02.653 File: "../../../PersonalPage/Views\Home\Methodology.cshtml"
+. 2012-05-18 14.52.02.654 Copying "../../../PersonalPage/Views\Home\Methodology.cshtml" to remote directory started.
+. 2012-05-18 14.52.02.654 Ascii transfer mode selected.
+. 2012-05-18 14.52.02.655 Starting upload of ../../../PersonalPage/Views\Home\Methodology.cshtml
+> 2012-05-18 14.52.02.655 TYPE A
+< 2012-05-18 14.52.02.721 200 Type set to A.
+> 2012-05-18 14.52.02.721 PASV
+< 2012-05-18 14.52.02.788 227 Entering Passive Mode (217,198,114,7,19,221).
+> 2012-05-18 14.52.02.788 STOR Methodology.cshtml
+< 2012-05-18 14.52.02.865 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.02.947 226 Transfer complete.
+. 2012-05-18 14.52.02.947 Upload successful
+. 2012-05-18 14.52.02.948 File: "../../../PersonalPage/Views\Home\Portfolio.cshtml"
+. 2012-05-18 14.52.02.949 Copying "../../../PersonalPage/Views\Home\Portfolio.cshtml" to remote directory started.
+. 2012-05-18 14.52.02.949 Ascii transfer mode selected.
+. 2012-05-18 14.52.02.949 Starting upload of ../../../PersonalPage/Views\Home\Portfolio.cshtml
+> 2012-05-18 14.52.02.949 TYPE A
+< 2012-05-18 14.52.03.016 200 Type set to A.
+> 2012-05-18 14.52.03.016 PASV
+< 2012-05-18 14.52.03.082 227 Entering Passive Mode (217,198,114,7,19,234).
+> 2012-05-18 14.52.03.083 STOR Portfolio.cshtml
+< 2012-05-18 14.52.03.152 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.03.220 226 Transfer complete.
+. 2012-05-18 14.52.03.220 Upload successful
+. 2012-05-18 14.52.03.221 Synchronizing local directory '../../../PersonalPage/Views\Shared\' with remote directory '/stafa/wwwroot/Views/Shared/', params = 3
+. 2012-05-18 14.52.03.221 Copying 1 files/directories to remote directory "/stafa/wwwroot/Views/Shared/"
+. 2012-05-18 14.52.03.221   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 01; Resume: S (102400); CalcS: No; Mask: *.*
+. 2012-05-18 14.52.03.222   TM: M; ClAr: No; CPS: 0; ExclM(No): 
+. 2012-05-18 14.52.03.222   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2012-05-18 14.52.03.222 File: "../../../PersonalPage/Views\Shared\Error.cshtml"
+< 2012-05-18 14.52.03.222 Script: Local '../../../PersonalPage/Views\Shared' => Remote '/stafa/wwwroot/Views/Shared'
+. 2012-05-18 14.52.03.225 Copying "../../../PersonalPage/Views\Shared\Error.cshtml" to remote directory started.
+. 2012-05-18 14.52.03.225 Ascii transfer mode selected.
+. 2012-05-18 14.52.03.225 Starting upload of ../../../PersonalPage/Views\Shared\Error.cshtml
+> 2012-05-18 14.52.03.225 CWD /stafa/wwwroot/Views/Shared/
+< 2012-05-18 14.52.03.293 250 CWD command successful.
+> 2012-05-18 14.52.03.293 PWD
+< 2012-05-18 14.52.03.359 257 "/stafa/wwwroot/Views/Shared" is current directory.
+> 2012-05-18 14.52.03.359 TYPE A
+< 2012-05-18 14.52.03.426 200 Type set to A.
+> 2012-05-18 14.52.03.426 PASV
+< 2012-05-18 14.52.03.492 227 Entering Passive Mode (217,198,114,7,19,219).
+> 2012-05-18 14.52.03.493 LIST -a
+< 2012-05-18 14.52.03.560 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.03.626 226 Transfer complete.
+> 2012-05-18 14.52.03.627 TYPE A
+< 2012-05-18 14.52.03.693 200 Type set to A.
+> 2012-05-18 14.52.03.693 PASV
+< 2012-05-18 14.52.03.759 227 Entering Passive Mode (217,198,114,7,19,243).
+> 2012-05-18 14.52.03.760 STOR Error.cshtml
+< 2012-05-18 14.52.03.827 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.03.896 226 Transfer complete.
+. 2012-05-18 14.52.03.896 Upload successful
+> 2012-05-18 14.52.03.897 Script: synchronize remote -delete "../../../PersonalPage/Content" "/stafa/wwwroot/Content/"
+< 2012-05-18 14.52.03.897 Script: Comparing...
+. 2012-05-18 14.52.03.898 Collecting synchronization list for local directory '../../../PersonalPage/Content' and remote directory '/stafa/wwwroot/Content/', mode = 0, params = 3
+. 2012-05-18 14.52.03.899 Retrieving directory listing...
+> 2012-05-18 14.52.03.899 CWD /stafa/wwwroot/Content/
+< 2012-05-18 14.52.03.968 250 CWD command successful.
+> 2012-05-18 14.52.03.968 PWD
+< 2012-05-18 14.52.04.035 257 "/stafa/wwwroot/Content" is current directory.
+> 2012-05-18 14.52.04.035 TYPE A
+< 2012-05-18 14.52.04.101 200 Type set to A.
+> 2012-05-18 14.52.04.101 PASV
+< 2012-05-18 14.52.04.168 227 Entering Passive Mode (217,198,114,7,19,189).
+> 2012-05-18 14.52.04.168 LIST -a
+< 2012-05-18 14.52.04.236 150 Opening ASCII mode data connection.
+< 2012-05-18 14.52.04.302 226 Transfer complete.
+. 2012-05-18 14.52.04.308 Directory listing successful
+< 2012-05-18 14.52.04.310 Script: Synchronizing...
+. 2012-05-18 14.52.04.311 Synchronizing local directory '../../../PersonalPage/Content\' with remote directory '/stafa/wwwroot/Content/', params = 3
+. 2012-05-18 14.52.04.311 Copying 2 files/directories to remote directory "/stafa/wwwroot/Content/"
+. 2012-05-18 14.52.04.311   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 01; Resume: S (102400); CalcS: No; Mask: *.*
+. 2012-05-18 14.52.04.311   TM: M; ClAr: No; CPS: 0; ExclM(No): 
+. 2012-05-18 14.52.04.311   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2012-05-18 14.52.04.312 File: "../../../PersonalPage/Content\Images"
+< 2012-05-18 14.52.04.312 Script: Local '../../../PersonalPage/Content' => Remote '/stafa/wwwroot/Content'
+. 2012-05-18 14.52.04.313 Creating directory "/stafa/wwwroot/Content/Images/".
+> 2012-05-18 14.52.04.313 CWD /stafa/wwwroot/Content/
+< 2012-05-18 14.52.04.381 250 CWD command successful.
+> 2012-05-18 14.52.04.381 MKD Images
+< 2012-05-18 14.52.04.449 257 "Images" directory created.
+. 2012-05-18 14.52.04.449 File: "../../../PersonalPage/Content\Scripts"
+. 2012-05-18 14.52.04.450 Creating directory "/stafa/wwwroot/Content/Scripts/".
+> 2012-05-18 14.52.04.450 CWD /stafa/wwwroot/Content/
+< 2012-05-18 14.52.04.518 250 CWD command successful.
+> 2012-05-18 14.52.04.518 MKD Scripts
+< 2012-05-18 14.52.04.586 257 "Scripts" directory created.
+> 2012-05-18 14.52.04.587 Script: synchronize remote -delete "../../../PersonalPage/Web.config" "/stafa/wwwroot/Web.config"
+< 2012-05-18 14.52.04.587 Script: Comparing...
+. 2012-05-18 14.52.04.588 Collecting synchronization list for local directory '../../../PersonalPage/Web.config' and remote directory '/stafa/wwwroot/Web.config', mode = 0, params = 3
+< 2012-05-18 14.52.04.588 Script: Nothing to synchronize.
+> 2012-05-18 14.52.04.589 Script: synchronize remote -delete "../../../PersonalPage/packages.config" "/stafa/wwwroot/packages.config"
+< 2012-05-18 14.52.04.590 Script: Comparing...
+. 2012-05-18 14.52.04.590 Collecting synchronization list for local directory '../../../PersonalPage/packages.config' and remote directory '/stafa/wwwroot/packages.config', mode = 0, params = 3
+< 2012-05-18 14.52.04.591 Script: Nothing to synchronize.
+> 2012-05-18 14.52.04.592 Script: synchronize remote -delete "../../../PersonalPage/global.asax" "/stafa/wwwroot/global.asax"
+< 2012-05-18 14.52.04.592 Script: Comparing...
+. 2012-05-18 14.52.04.592 Collecting synchronization list for local directory '../../../PersonalPage/global.asax' and remote directory '/stafa/wwwroot/global.asax', mode = 0, params = 3
+< 2012-05-18 14.52.04.593 Script: Nothing to synchronize.
+> 2012-05-18 14.52.04.595 Script: close
+. 2012-05-18 14.52.04.595 Disconnected from server
+. 2012-05-18 15.03.39.423 --------------------------------------------------------------------------
+. 2012-05-18 15.03.39.423 WinSCP Version 4.3.7 (Build 1679) (OS 6.1.7601 Service Pack 1)
+. 2012-05-18 15.03.39.424 Configuration: C:\Users\Simon\Workspace\CSharp\Projects\PersonalPage\Library\Tools\WinSCP\WinSCP.ini
+. 2012-05-18 15.03.39.425 Local account: Simon-PC\Simon
+. 2012-05-18 15.03.39.425 Login time: 18 May, 2012 15.03.39
+. 2012-05-18 15.03.39.425 --------------------------------------------------------------------------
+. 2012-05-18 15.03.39.425 Session name: stafa@stafa.asp2.cz (Ad-Hoc session)
+. 2012-05-18 15.03.39.425 Host name: stafa.asp2.cz (Port: 21)
+. 2012-05-18 15.03.39.425 User name: stafa (Password: Yes, Key file: No)
+. 2012-05-18 15.03.39.425 Tunnel: No
+. 2012-05-18 15.03.39.426 Transfer Protocol: FTP
+. 2012-05-18 15.03.39.426 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2012-05-18 15.03.39.426 Proxy: none
+. 2012-05-18 15.03.39.426 FTP: FTPS: None; Passive: Yes [Force IP: No]
+. 2012-05-18 15.03.39.426 Local directory: default, Remote directory: home, Update: No, Cache: Yes
+. 2012-05-18 15.03.39.426 Cache directory changes: Yes, Permanent: Yes
+. 2012-05-18 15.03.39.426 DST mode: 1
+. 2012-05-18 15.03.39.426 --------------------------------------------------------------------------
+. 2012-05-18 15.03.39.435 Connecting to stafa.asp2.cz ...
+. 2012-05-18 15.03.39.507 Connected with stafa.asp2.cz. Waiting for welcome message...
+< 2012-05-18 15.03.39.863 220 Microsoft FTP Service
+> 2012-05-18 15.03.39.863 USER stafa
+< 2012-05-18 15.03.39.929 331 Password required for stafa.
+> 2012-05-18 15.03.39.929 PASS *********
+< 2012-05-18 15.03.39.997 230 User logged in.
+> 2012-05-18 15.03.39.997 SYST
+< 2012-05-18 15.03.40.064 215 Windows_NT
+> 2012-05-18 15.03.40.064 FEAT
+< 2012-05-18 15.03.40.130 211-Extended features supported:
+< 2012-05-18 15.03.40.130  LANG EN*
+< 2012-05-18 15.03.40.130  UTF8
+< 2012-05-18 15.03.40.130  AUTH TLS;TLS-C;SSL;TLS-P;
+< 2012-05-18 15.03.40.130  PBSZ
+< 2012-05-18 15.03.40.130  PROT C;P;
+< 2012-05-18 15.03.40.130  CCC
+< 2012-05-18 15.03.40.130  HOST
+< 2012-05-18 15.03.40.130  SIZE
+< 2012-05-18 15.03.40.131  MDTM
+< 2012-05-18 15.03.40.131  REST STREAM
+< 2012-05-18 15.03.40.131 211 END
+> 2012-05-18 15.03.40.131 OPTS UTF8 ON
+< 2012-05-18 15.03.40.196 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+. 2012-05-18 15.03.40.197 Connected
+. 2012-05-18 15.03.40.197 --------------------------------------------------------------------------
+. 2012-05-18 15.03.40.197 Using FTP protocol.
+. 2012-05-18 15.03.40.198 Doing startup conversation with host.
+> 2012-05-18 15.03.40.198 PWD
+< 2012-05-18 15.03.40.265 257 "/stafa" is current directory.
+. 2012-05-18 15.03.40.265 Getting current directory name.
+. 2012-05-18 15.03.40.265 Startup conversation with host finished.
+< 2012-05-18 15.03.40.266 Script: Active session: [1] stafa@stafa.asp2.cz
+> 2012-05-18 15.03.40.267 Script: synchronize remote -delete "../../PersonalPage/bin" "/stafa/wwwroot/bin/"
+< 2012-05-18 15.03.40.267 Script: Comparing...
+. 2012-05-18 15.03.40.267 Collecting synchronization list for local directory '../../PersonalPage/bin' and remote directory '/stafa/wwwroot/bin/', mode = 0, params = 3
+. 2012-05-18 15.03.40.269 Retrieving directory listing...
+> 2012-05-18 15.03.40.269 CWD /stafa/wwwroot/bin/
+< 2012-05-18 15.03.40.336 250 CWD command successful.
+> 2012-05-18 15.03.40.336 PWD
+< 2012-05-18 15.03.40.402 257 "/stafa/wwwroot/bin" is current directory.
+> 2012-05-18 15.03.40.402 TYPE A
+< 2012-05-18 15.03.40.468 200 Type set to A.
+> 2012-05-18 15.03.40.468 PASV
+< 2012-05-18 15.03.40.534 227 Entering Passive Mode (217,198,114,7,22,229).
+> 2012-05-18 15.03.40.534 LIST -a
+< 2012-05-18 15.03.40.602 150 Opening ASCII mode data connection.
+< 2012-05-18 15.03.40.669 226 Transfer complete.
+. 2012-05-18 15.03.40.669 Directory listing successful
+. 2012-05-18 15.03.40.673 Collecting synchronization list for local directory '../../PersonalPage/bin\Context' and remote directory '/stafa/wwwroot/bin/Context', mode = 0, params = 3
+. 2012-05-18 15.03.40.674 Retrieving directory listing...
+> 2012-05-18 15.03.40.674 CWD /stafa/wwwroot/bin/Context/
+< 2012-05-18 15.03.40.741 250 CWD command successful.
+> 2012-05-18 15.03.40.741 PWD
+< 2012-05-18 15.03.40.807 257 "/stafa/wwwroot/bin/Context" is current directory.
+> 2012-05-18 15.03.40.808 TYPE A
+< 2012-05-18 15.03.40.874 200 Type set to A.
+> 2012-05-18 15.03.40.874 PASV
+< 2012-05-18 15.03.40.940 227 Entering Passive Mode (217,198,114,7,22,232).
+> 2012-05-18 15.03.40.941 LIST -a
+< 2012-05-18 15.03.41.007 150 Opening ASCII mode data connection.
+< 2012-05-18 15.03.41.074 226 Transfer complete.
+. 2012-05-18 15.03.41.074 Directory listing successful
+< 2012-05-18 15.03.41.080 Script: Nothing to synchronize.
+> 2012-05-18 15.03.41.081 Script: synchronize remote -delete "../../PersonalPage/Views" "/stafa/wwwroot/Views/"
+< 2012-05-18 15.03.41.081 Script: Comparing...
+. 2012-05-18 15.03.41.082 Collecting synchronization list for local directory '../../PersonalPage/Views' and remote directory '/stafa/wwwroot/Views/', mode = 0, params = 3
+. 2012-05-18 15.03.41.082 Retrieving directory listing...
+> 2012-05-18 15.03.41.082 CWD /stafa/wwwroot/Views/
+< 2012-05-18 15.03.41.149 250 CWD command successful.
+> 2012-05-18 15.03.41.149 PWD
+< 2012-05-18 15.03.41.215 257 "/stafa/wwwroot/Views" is current directory.
+> 2012-05-18 15.03.41.215 TYPE A
+< 2012-05-18 15.03.41.281 200 Type set to A.
+> 2012-05-18 15.03.41.281 PASV
+< 2012-05-18 15.03.41.347 227 Entering Passive Mode (217,198,114,7,22,230).
+> 2012-05-18 15.03.41.348 LIST -a
+< 2012-05-18 15.03.41.416 150 Opening ASCII mode data connection.
+< 2012-05-18 15.03.41.485 226 Transfer complete.
+. 2012-05-18 15.03.41.485 Directory listing successful
+. 2012-05-18 15.03.41.485 Collecting synchronization list for local directory '../../PersonalPage/Views\Home' and remote directory '/stafa/wwwroot/Views/Home', mode = 0, params = 3
+. 2012-05-18 15.03.41.486 Retrieving directory listing...
+> 2012-05-18 15.03.41.486 CWD /stafa/wwwroot/Views/Home/
+< 2012-05-18 15.03.41.553 250 CWD command successful.
+> 2012-05-18 15.03.41.553 PWD
+< 2012-05-18 15.03.41.620 257 "/stafa/wwwroot/Views/Home" is current directory.
+> 2012-05-18 15.03.41.620 TYPE A
+< 2012-05-18 15.03.41.686 200 Type set to A.
+> 2012-05-18 15.03.41.686 PASV
+< 2012-05-18 15.03.41.753 227 Entering Passive Mode (217,198,114,7,22,223).
+> 2012-05-18 15.03.41.753 LIST -a
+< 2012-05-18 15.03.41.819 150 Opening ASCII mode data connection.
+< 2012-05-18 15.03.41.887 226 Transfer complete.
+. 2012-05-18 15.03.41.887 Directory listing successful
+. 2012-05-18 15.03.41.889 Collecting synchronization list for local directory '../../PersonalPage/Views\Shared' and remote directory '/stafa/wwwroot/Views/Shared', mode = 0, params = 3
+. 2012-05-18 15.03.41.889 Retrieving directory listing...
+> 2012-05-18 15.03.41.889 CWD /stafa/wwwroot/Views/Shared/
+< 2012-05-18 15.03.41.956 250 CWD command successful.
+> 2012-05-18 15.03.41.956 PWD
+< 2012-05-18 15.03.42.022 257 "/stafa/wwwroot/Views/Shared" is current directory.
+> 2012-05-18 15.03.42.022 TYPE A
+< 2012-05-18 15.03.42.088 200 Type set to A.
+> 2012-05-18 15.03.42.088 PASV
+< 2012-05-18 15.03.42.155 227 Entering Passive Mode (217,198,114,7,22,235).
+> 2012-05-18 15.03.42.155 LIST -a
+< 2012-05-18 15.03.42.224 150 Opening ASCII mode data connection.
+< 2012-05-18 15.03.42.288 226 Transfer complete.
+. 2012-05-18 15.03.42.288 Directory listing successful
+< 2012-05-18 15.03.42.290 Script: Nothing to synchronize.
+> 2012-05-18 15.03.42.291 Script: synchronize remote -delete "../../PersonalPage/Content" "/stafa/wwwroot/Content/"
+< 2012-05-18 15.03.42.291 Script: Comparing...
+. 2012-05-18 15.03.42.291 Collecting synchronization list for local directory '../../PersonalPage/Content' and remote directory '/stafa/wwwroot/Content/', mode = 0, params = 3
+. 2012-05-18 15.03.42.292 Retrieving directory listing...
+> 2012-05-18 15.03.42.292 CWD /stafa/wwwroot/Content/
+< 2012-05-18 15.03.42.359 250 CWD command successful.
+> 2012-05-18 15.03.42.359 PWD
+< 2012-05-18 15.03.42.425 257 "/stafa/wwwroot/Content" is current directory.
+> 2012-05-18 15.03.42.425 TYPE A
+< 2012-05-18 15.03.42.492 200 Type set to A.
+> 2012-05-18 15.03.42.492 PASV
+< 2012-05-18 15.03.42.559 227 Entering Passive Mode (217,198,114,7,22,222).
+> 2012-05-18 15.03.42.559 LIST -a
+< 2012-05-18 15.03.42.625 150 Opening ASCII mode data connection.
+< 2012-05-18 15.03.42.693 226 Transfer complete.
+. 2012-05-18 15.03.42.693 Directory listing successful
+. 2012-05-18 15.03.42.693 Collecting synchronization list for local directory '../../PersonalPage/Content\Images' and remote directory '/stafa/wwwroot/Content/Images', mode = 0, params = 3
+. 2012-05-18 15.03.42.694 Retrieving directory listing...
+> 2012-05-18 15.03.42.694 CWD /stafa/wwwroot/Content/Images/
+< 2012-05-18 15.03.42.761 250 CWD command successful.
+> 2012-05-18 15.03.42.761 PWD
+< 2012-05-18 15.03.42.827 257 "/stafa/wwwroot/Content/Images" is current directory.
+> 2012-05-18 15.03.42.827 TYPE A
+< 2012-05-18 15.03.42.893 200 Type set to A.
+> 2012-05-18 15.03.42.893 PASV
+< 2012-05-18 15.03.42.960 227 Entering Passive Mode (217,198,114,7,22,187).
+> 2012-05-18 15.03.42.960 LIST -a
+< 2012-05-18 15.03.43.026 150 Opening ASCII mode data connection.
+< 2012-05-18 15.03.43.093 226 Transfer complete.
+. 2012-05-18 15.03.43.093 Directory listing successful
+. 2012-05-18 15.03.43.093 Collecting synchronization list for local directory '../../PersonalPage/Content\Scripts' and remote directory '/stafa/wwwroot/Content/Scripts', mode = 0, params = 3
+. 2012-05-18 15.03.43.095 Retrieving directory listing...
+> 2012-05-18 15.03.43.095 CWD /stafa/wwwroot/Content/Scripts/
+< 2012-05-18 15.03.43.162 250 CWD command successful.
+> 2012-05-18 15.03.43.162 PWD
+< 2012-05-18 15.03.43.228 257 "/stafa/wwwroot/Content/Scripts" is current directory.
+> 2012-05-18 15.03.43.228 TYPE A
+< 2012-05-18 15.03.43.294 200 Type set to A.
+> 2012-05-18 15.03.43.294 PASV
+< 2012-05-18 15.03.43.360 227 Entering Passive Mode (217,198,114,7,22,245).
+> 2012-05-18 15.03.43.361 LIST -a
+< 2012-05-18 15.03.43.427 150 Opening ASCII mode data connection.
+< 2012-05-18 15.03.43.494 226 Transfer complete.
+. 2012-05-18 15.03.43.494 Directory listing successful
+< 2012-05-18 15.03.43.496 Script: Nothing to synchronize.
+> 2012-05-18 15.03.43.497 Script: synchronize remote -delete "../../PersonalPage/Web.config" "/stafa/wwwroot/Web.config"
+< 2012-05-18 15.03.43.498 Script: Comparing...
+. 2012-05-18 15.03.43.498 Collecting synchronization list for local directory '../../PersonalPage/Web.config' and remote directory '/stafa/wwwroot/Web.config', mode = 0, params = 3
+< 2012-05-18 15.03.43.499 Script: Nothing to synchronize.
+> 2012-05-18 15.03.43.500 Script: synchronize remote -delete "../../PersonalPage/packages.config" "/stafa/wwwroot/packages.config"
+< 2012-05-18 15.03.43.500 Script: Comparing...
+. 2012-05-18 15.03.43.501 Collecting synchronization list for local directory '../../PersonalPage/packages.config' and remote directory '/stafa/wwwroot/packages.config', mode = 0, params = 3
+< 2012-05-18 15.03.43.501 Script: Nothing to synchronize.
+> 2012-05-18 15.03.43.502 Script: synchronize remote -delete "../../PersonalPage/global.asax" "/stafa/wwwroot/global.asax"
+< 2012-05-18 15.03.43.503 Script: Comparing...
+. 2012-05-18 15.03.43.503 Collecting synchronization list for local directory '../../PersonalPage/global.asax' and remote directory '/stafa/wwwroot/global.asax', mode = 0, params = 3
+< 2012-05-18 15.03.43.503 Script: Nothing to synchronize.
+> 2012-05-18 15.03.43.505 Script: close
+. 2012-05-18 15.03.43.509 Disconnected from server

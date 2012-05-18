@@ -1,0 +1,31 @@
+# Automatically answer all prompts negatively not to stall
+# the script on errors
+option batch on
+ 
+# Disable overwrite confirmations that conflict with the previous
+option confirm off
+ 
+# Exclude files that I don't care about
+# option exclude "*.db; *.ini; *.tmp;"
+ 
+# Connect to the server (replace with your username, password, domain)
+#open devFtp
+open ftp://stafa:i1EuCy5ZF@stafa.asp2.cz
+ 
+# option exclude "/log"
+
+# Do the work pokud by se to spravne nesynclo zkusit pridat -mirror
+synchronize remote -delete "../../PersonalPage/bin" "/stafa/wwwroot/bin/"
+synchronize remote -delete "../../PersonalPage/Views" "/stafa/wwwroot/Views/"
+synchronize remote -delete "../../PersonalPage/Content" "/stafa/wwwroot/Content/"
+synchronize remote -delete "../../PersonalPage/Web.config" "/stafa/wwwroot/Web.config"
+synchronize remote -delete "../../PersonalPage/packages.config" "/stafa/wwwroot/packages.config"
+synchronize remote -delete "../../PersonalPage/global.asax" "/stafa/wwwroot/global.asax"
+ 
+
+# smazat adresar cache v adresari temp
+# rmdir "/Temp/Cache"
+
+# Close and exit
+close
+exit
